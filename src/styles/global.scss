@@ -1,0 +1,13 @@
+.app {
+  transition: background-color 0.3s ease;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
