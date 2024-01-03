@@ -1,13 +1,15 @@
-.app {
-  transition: background-color 0.3s ease;
+@use "@/styles/themes.scss" as *;
+
+html,
+body {
+  background-color: var(--color-background);
 }
 
-.light {
-  background-color: #ffffff;
-  color: #000000;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.dark {
-  background-color: #333333;
-  color: #ffffff;
+* {
+  box-sizing: border-box;
 }
