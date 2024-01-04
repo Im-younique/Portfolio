@@ -1,28 +1,18 @@
-"use client";
-
-// recoil
-import { useRecoilState } from "recoil";
-import { themeState } from "@/lib/recoil/atoms/themeState";
+// "use client";
 
 // components
-import ThemeToggle from "@/components/main/ThemeToggle";
+// import ThemeToggle from "@/components/main/ThemeToggle";
+
+import dynamic from "next/dynamic";
+
+const ThemeToggle = dynamic(() => import("@/components/main/ThemeToggle"), {
+  ssr: false,
+});
 
 export default function Home() {
-  const [theme, setTheme] = useRecoilState(themeState);
-
-  const handleThemeChange = () => {
-    theme === "white" ? setTheme("dark") : setTheme("white");
-  };
-
-  console.log(theme);
-
   return (
     <main>
-      <ThemeToggle
-        name="themeToggle"
-        theme={theme}
-        onChange={handleThemeChange}
-      />
+      <ThemeToggle />
       <h1>PortPolio</h1>
     </main>
   );

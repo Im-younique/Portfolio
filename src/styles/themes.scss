@@ -1,12 +1,12 @@
 @use "./color.scss" as *;
 
-html[data-theme="light"] {
+[data-theme="light"] {
   --color-text: #{$text-color-light};
   --color-background: #{$bg-color-light};
   // --color-btn: #{$btn-color-1};
 }
 
-html[data-theme="dark"] {
+[data-theme="dark"] {
   --color-text: #{$text-color-dark};
   --color-background: #{$bg-color-dark};
   // --color-btn: #{$btn-color-2};

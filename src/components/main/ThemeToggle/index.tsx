@@ -1,6 +1,6 @@
 "use client";
 
-import useToggle from "@/hooks/useToggle";
+import { useState, useEffect } from "react";
 
 // styles
 import classes from "./themetoggle.module.scss";
@@ -8,20 +8,33 @@ import classes from "./themetoggle.module.scss";
 // icon
 import { RiSunFill, RiMoonFill } from "@remixicon/react";
 
-interface IProps {
-  name: string;
-  theme: "dark" | "white";
-  disabled?: boolean;
-  onChange?: () => void;
-}
+const ThemeToggle = () => {
+  const [darkTheme, setDarkTheme] = useState<boolean | undefined>(undefined);
 
-const ThemeToggle = ({ name, theme, disabled = false, onChange }: IProps) => {
-  const [checked, toggle] = useToggle(theme === "white");
-
-  const handleChange = () => {
-    toggle();
-    onChange && onChange();
+  const handleToggle = () => {
+    setDarkTheme(!darkTheme);
   };
+
+  useEffect(() => {
+    if (darkTheme !== undefined) {
+      if (darkTheme) {
+        document.body.setAttribute("data-theme", "dark");
+        window.localStorage.setItem("theme", "dark");
+      } else {
+        document.body.setAttribute("data-theme", "light");
+        window.localStorage.setItem("theme", "light");
+      }
+    }
+  }, [darkTheme]);
+
+  useEffect(() => {
+    const root = window.document.body;
+    const initialColorValue = root.style.getPropertyValue(
+      "--initial-color-mode"
+    );
+
+    setDarkTheme(initialColorValue === "dark");
+  }, []);
 
   return (
     <label className={classes.container}>
@@ -30,10 +43,8 @@ const ThemeToggle = ({ name, theme, disabled = false, onChange }: IProps) => {
       <input
         className={classes.input}
         type="checkbox"
-        name={name}
-        checked={checked}
-        onChange={handleChange}
-        disabled={disabled}
+        checked={!darkTheme || false}
+        onChange={handleToggle}
       />
       <div className={classes.switch} />
     </label>
