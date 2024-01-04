@@ -10,13 +10,13 @@ import { RiSunFill, RiMoonFill } from "@remixicon/react";
 
 interface IProps {
   name: string;
-  on: boolean;
+  theme: "dark" | "white";
   disabled?: boolean;
   onChange?: () => void;
 }
 
-const ThemeToggle = ({ name, on, disabled = false, onChange }: IProps) => {
-  const [checked, toggle] = useToggle(on);
+const ThemeToggle = ({ name, theme, disabled = false, onChange }: IProps) => {
+  const [checked, toggle] = useToggle(theme === "white");
 
   const handleChange = () => {
     toggle();
