@@ -3,7 +3,10 @@
 import useToggle from "@/hooks/useToggle";
 
 // styles
-import classes from "./toggle.module.scss";
+import classes from "./themetoggle.module.scss";
+
+// icon
+import { RiSunFill, RiMoonFill } from "@remixicon/react";
 
 interface IProps {
   name: string;
@@ -12,7 +15,7 @@ interface IProps {
   onChange?: () => void;
 }
 
-const Toggle = ({ name, on, disabled = false, onChange }: IProps) => {
+const ThemeToggle = ({ name, on, disabled = false, onChange }: IProps) => {
   const [checked, toggle] = useToggle(on);
 
   const handleChange = () => {
@@ -22,6 +25,8 @@ const Toggle = ({ name, on, disabled = false, onChange }: IProps) => {
 
   return (
     <label className={classes.container}>
+      <RiSunFill className={`${classes.icon} ${classes.sun}`} size={20} />
+      <RiMoonFill className={`${classes.icon} ${classes.moon}`} size={20} />
       <input
         className={classes.input}
         type="checkbox"
@@ -35,4 +40,4 @@ const Toggle = ({ name, on, disabled = false, onChange }: IProps) => {
   );
 };
 
-export default Toggle;
+export default ThemeToggle;

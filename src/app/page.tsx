@@ -1,9 +1,9 @@
-import Toggle from "@/components/base/Toggle";
+import ThemeToggle from "@/components/main/ThemeToggle";
 
 export default function Home() {
   return (
     <main>
-      <Toggle name="test" on={false} />
+      <ThemeToggle name="themeToggle" on={false} />
       <h1>PortPolio</h1>
     </main>
   );
