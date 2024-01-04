@@ -32,7 +32,6 @@ export default function RootLayout({
         typeof persistedPreferenceMode === "string";
 
       if (hasPersistedPreference) {
-        console.log(persistedPreferenceMode);
         return persistedPreferenceMode;
       }
 
@@ -48,7 +47,6 @@ export default function RootLayout({
 
     //현재 테마 모드
     const currentColorMode = getInitialColorMode();
-    console.log(currentColorMode);
     const element = document.body;
     element.style.setProperty("--initial-color-mode", currentColorMode);
 
