@@ -62,8 +62,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: themeInitializerScript,
           }}
-        ></script>
-        <RecoilRootProvider>{children}</RecoilRootProvider>
+        />
+        <RecoilRootProvider>
+          <div className="wrapper">{children}</div>
+        </RecoilRootProvider>
       </body>
     </html>
   );
