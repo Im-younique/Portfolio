@@ -64,7 +64,7 @@ export default function RootLayout({
           }}
         />
         <RecoilRootProvider>
-          <div className="wrapper">{children}</div>
+          <main className="wrapper">{children}</main>
         </RecoilRootProvider>
       </body>
     </html>
