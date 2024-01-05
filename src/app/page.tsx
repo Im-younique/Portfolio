@@ -13,11 +13,14 @@ export default function Home() {
   return (
     <>
       <Picture />
+      <ThemeToggle />
       <MainFrame.Container>
         <MainFrame.Box>
-          <h1>PortPolio</h1>
+          <span>PortPolio</span>
         </MainFrame.Box>
-        <ThemeToggle />
+        <MainFrame.Box>2</MainFrame.Box>
+        <MainFrame.Box>3</MainFrame.Box>
+        <MainFrame.Box>4</MainFrame.Box>
       </MainFrame.Container>
     </>
   );
