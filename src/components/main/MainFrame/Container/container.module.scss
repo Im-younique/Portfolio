@@ -44,3 +44,40 @@
     left: 50%;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: calc(100% - 24px);
+    left: 24px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    & > section {
+      width: calc(100% - 24px);
+    }
+
+    & > :nth-child(1) {
+      height: auto;
+      top: 20%;
+    }
+
+    & > :nth-child(2) {
+      left: 0;
+      top: calc(49% - 72px);
+      height: 17%;
+    }
+
+    & > :nth-child(3) {
+      top: calc(66% - 48px);
+      height: 17%;
+    }
+
+    & > :nth-child(4) {
+      top: calc(83% - 24px);
+      height: 17%;
+      left: 0;
+    }
+  }
+}

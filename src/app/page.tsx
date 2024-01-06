@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <>
       <Picture />
-      <ThemeToggle />
       <MainFrame.Container>
         <section>
+          <ThemeToggle />
           <span>PortPolio</span>
         </section>
         <MainFrame.Box>
