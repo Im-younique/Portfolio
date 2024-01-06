@@ -18,9 +18,15 @@ export default function Home() {
         <MainFrame.Box>
           <span>PortPolio</span>
         </MainFrame.Box>
-        <MainFrame.Box>2</MainFrame.Box>
-        <MainFrame.Box>3</MainFrame.Box>
-        <MainFrame.Box>4</MainFrame.Box>
+        <MainFrame.Box>
+          <MainFrame.BoxTitle text_first="ABOUT" text_second="ME" />
+        </MainFrame.Box>
+        <MainFrame.Box>
+          <MainFrame.BoxTitle text_first="MY" text_second="PROJECT" />
+        </MainFrame.Box>
+        <MainFrame.Box>
+          <MainFrame.BoxTitle text_first="GUEST" text_second="BOOK" />
+        </MainFrame.Box>
       </MainFrame.Container>
     </>
   );
