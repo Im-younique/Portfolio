@@ -15,9 +15,9 @@ export default function Home() {
       <Picture />
       <ThemeToggle />
       <MainFrame.Container>
-        <MainFrame.Box>
+        <section>
           <span>PortPolio</span>
-        </MainFrame.Box>
+        </section>
         <MainFrame.Box>
           <MainFrame.BoxTitle text_first="ABOUT" text_second="ME" />
         </MainFrame.Box>
