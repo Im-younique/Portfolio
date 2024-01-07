@@ -27,3 +27,16 @@
     }
   }
 }
+
+.expand {
+  width: calc(100% - 24px) !important;
+  height: calc(100% - 48px) !important;
+  top: 24px !important;
+  left: 0 !important;
+  z-index: 200;
+}
+
+.shrink {
+  transform: scale(0.5);
+  opacity: 0;
+}
