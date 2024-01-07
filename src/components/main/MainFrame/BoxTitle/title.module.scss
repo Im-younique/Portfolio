@@ -27,13 +27,13 @@
 .title_frist {
   color: var(--color-text);
   &::before {
-    color: #fa5b0f;
+    color: var(--color-impact);
     top: 105%;
   }
 }
 
 .title_second {
-  color: #fa5b0f;
+  color: var(--color-impact);
   &::before {
     color: var(--color-text);
     bottom: 105%;

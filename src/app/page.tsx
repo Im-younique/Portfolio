@@ -19,6 +19,9 @@ export default function Home() {
         </section>
         <MainFrame.Box boxName="expand-about">
           <MainFrame.BoxTitle text_first="ABOUT" text_second="ME" />
+          <MainFrame.BoxContent title="ABOUT ME">
+            <div>Temp</div>
+          </MainFrame.BoxContent>
         </MainFrame.Box>
         <MainFrame.Box boxName="expand-project">
           <MainFrame.BoxTitle text_first="MY" text_second="PROJECT" />

@@ -1,0 +1,27 @@
+.content {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: opacity 0.1s linear 0s;
+}
+
+.pageTitle {
+  margin-top: 50px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.titleText {
+  font-size: 50px;
+}
+
+.impactText {
+  color: var(--color-impact);
+}
