@@ -17,17 +17,17 @@ export default function Home() {
           <ThemeToggle />
           <span>PortPolio</span>
         </section>
-        <MainFrame.Box boxName="expand-about">
-          <MainFrame.BoxTitle text_first="ABOUT" text_second="ME" />
+        <MainFrame.Box boxName="about me">
+          <MainFrame.BoxTitle title="about me" />
           <MainFrame.BoxContent title="ABOUT ME">
             <div>Temp</div>
           </MainFrame.BoxContent>
         </MainFrame.Box>
-        <MainFrame.Box boxName="expand-project">
-          <MainFrame.BoxTitle text_first="MY" text_second="PROJECT" />
+        <MainFrame.Box boxName="my project">
+          <MainFrame.BoxTitle title="my project" />
         </MainFrame.Box>
-        <MainFrame.Box boxName="expand-guest">
-          <MainFrame.BoxTitle text_first="GUEST" text_second="BOOK" />
+        <MainFrame.Box boxName="guest book">
+          <MainFrame.BoxTitle title="guest book" />
         </MainFrame.Box>
       </MainFrame.Container>
     </>

@@ -45,3 +45,8 @@
     font-size: 30px;
   }
 }
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0s linear;
+}

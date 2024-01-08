@@ -1,7 +1,3 @@
 export type ThemeType = "dark" | "light";
 
-export type TMainExpand =
-  | "none"
-  | "expand-about"
-  | "expand-project"
-  | "expand-guest";
+export type TMainExpand = "none" | "about me" | "my project" | "guest book";
