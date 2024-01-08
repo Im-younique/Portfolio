@@ -19,15 +19,21 @@ export default function Home() {
         </section>
         <MainFrame.Box boxName="about me">
           <MainFrame.BoxTitle title="about me" />
-          <MainFrame.BoxContent title="about me">
+          <MainFrame.BoxContent title="about me" icon_name="profile">
             <div>Temp</div>
           </MainFrame.BoxContent>
         </MainFrame.Box>
         <MainFrame.Box boxName="my project">
           <MainFrame.BoxTitle title="my project" />
+          <MainFrame.BoxContent title="my project" icon_name="bag">
+            <div>Temp</div>
+          </MainFrame.BoxContent>
         </MainFrame.Box>
         <MainFrame.Box boxName="guest book">
           <MainFrame.BoxTitle title="guest book" />
+          <MainFrame.BoxContent title="guest book" icon_name="book">
+            <div>Temp</div>
+          </MainFrame.BoxContent>
         </MainFrame.Box>
       </MainFrame.Container>
     </>

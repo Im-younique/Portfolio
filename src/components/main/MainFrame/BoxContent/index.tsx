@@ -2,21 +2,25 @@
 import { useRecoilState } from "recoil";
 import { mainState } from "@/lib/recoil/atoms/mainState";
 
+// components
+import DividerWithIcon from "@/components/base/DividerWithIcon";
+
 // styles
 import classes from "./content.module.scss";
 
 // types
-import { TMainExpand } from "@/types";
+import { TMainExpand, TDividerIcon } from "@/types";
 
 // icon
 import { RiCloseLine } from "@remixicon/react";
 
 interface IProp {
   title: TMainExpand;
+  icon_name: TDividerIcon;
   children: React.ReactNode;
 }
 
-const BoxContent = ({ title, children }: IProp) => {
+const BoxContent = ({ title, icon_name, children }: IProp) => {
   const [expanded, setExpanded] = useRecoilState(mainState);
 
   const handleClose = (e: React.MouseEvent) => {
@@ -33,6 +37,7 @@ const BoxContent = ({ title, children }: IProp) => {
           <span className={classes.impactText}>{lastTitle}</span>
         </h2>
       </div>
+      <DividerWithIcon icon_name={icon_name} />
       <div className={classes.pageContent}>{children}</div>
       <RiCloseLine
         size={60}

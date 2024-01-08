@@ -1,6 +1,9 @@
 // styles
 import clasees from "./divider.module.scss";
 
+// types
+import { TDividerIcon } from "@/types";
+
 import {
   RiProfileFill,
   RiSuitcaseFill,
@@ -8,7 +11,7 @@ import {
 } from "@remixicon/react";
 
 interface IProp {
-  icon_name: "profile" | "bag" | "book";
+  icon_name: TDividerIcon;
 }
 
 const DividerWithIcon = ({ icon_name }: IProp) => {
