@@ -1,0 +1,29 @@
+.divider_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 35px auto 70px;
+  width: 60%;
+}
+
+.divider {
+  border: none;
+  width: 50%;
+  border-bottom: 2px solid #666;
+}
+
+.icon {
+  color: var(--color-impact);
+  margin: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .divider_container {
+    margin: 30px auto 60px;
+  }
+
+  .icon {
+    margin: 0 20px;
+  }
+}

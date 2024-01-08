@@ -1,0 +1,52 @@
+.title_wrapper {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.title_style {
+  position: relative;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box_title_text {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s;
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+  }
+}
+
+.title_frist {
+  color: var(--color-text);
+  &::before {
+    color: var(--color-impact);
+    top: 105%;
+  }
+}
+
+.title_second {
+  color: var(--color-impact);
+  &::before {
+    color: var(--color-text);
+    bottom: 105%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title_style {
+    font-size: 30px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0s linear;
+}
