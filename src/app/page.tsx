@@ -19,7 +19,7 @@ export default function Home() {
         </section>
         <MainFrame.Box boxName="about me">
           <MainFrame.BoxTitle title="about me" />
-          <MainFrame.BoxContent title="ABOUT ME">
+          <MainFrame.BoxContent title="about me">
             <div>Temp</div>
           </MainFrame.BoxContent>
         </MainFrame.Box>

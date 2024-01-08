@@ -11,17 +11,34 @@
   transition: opacity 0.1s linear 0s;
 }
 
+.view {
+  pointer-events: auto;
+  opacity: 1;
+  transition: opacity 0.3s linear 0.5s;
+}
+
 .pageTitle {
-  margin-top: 50px;
   margin: 0 auto;
+  margin-top: 50px;
   width: 100%;
   position: relative;
+  text-transform: uppercase;
 }
 
 .titleText {
   font-size: 50px;
+  text-align: center;
+  font-weight: 900;
 }
 
 .impactText {
   color: var(--color-impact);
+}
+
+.close_icon {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  cursor: pointer;
+  z-index: 100;
 }
