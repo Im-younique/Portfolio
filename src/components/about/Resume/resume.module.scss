@@ -42,7 +42,7 @@
 .resume_card_wrapper {
   position: relative;
   margin: 0 auto;
-  margin-top: 75px;
+  margin-top: 60px;
   max-width: 645px;
 }
 
@@ -72,6 +72,73 @@
   background-color: var(--color-sub-background);
 }
 
+.resume_content {
+  position: relative;
+
+  h6 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    & > :nth-child(1) {
+      font-weight: 700;
+    }
+  }
+
+  .date {
+    display: flex;
+    gap: 0.4rem;
+    color: #aaa;
+    font-size: 13px;
+  }
+
+  ul {
+    padding-left: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+    li {
+      font-size: 14px;
+      padding: 8px;
+      line-height: 1;
+    }
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+.color_seperator {
+  background: var(--color-impact);
+  height: 2px;
+  width: 70px;
+  margin-bottom: 24px;
+}
+
+.col_wrapper {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.col_half {
+  width: 50%;
+  margin-left: auto;
+
+  h6 {
+    text-wrap: wrap;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 0;
+    text-wrap: wrap;
+    font-size: 15px;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .resume_card_wrapper {
     width: 100%;
@@ -90,33 +157,37 @@
 }
 
 @media (min-width: 800px) {
-  .second,
-  .thrid,
-  .forth {
+  .card_0 {
+    position: relative;
+  }
+
+  .card_1,
+  .card_2,
+  .card_3 {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
   }
+
   // 카드 애니매이션
   .first {
-    position: relative;
     transform: scale(1) translate(0, 0);
     z-index: 3;
   }
 
   .second {
-    transform: scale(0.9) translate(0, -20px);
+    transform: scale(0.9) translate(0, -50px);
     z-index: 2;
   }
 
   .thrid {
-    transform: scale(0.85) translate(0, -40px);
+    transform: scale(0.8) translate(0, -110px);
     z-index: 1;
   }
 
   .forth {
-    transform: scale(0.8) translate(0, -60px);
+    transform: scale(0.7) translate(0, -180px);
     z-index: 0;
   }
 }
