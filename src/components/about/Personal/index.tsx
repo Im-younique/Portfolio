@@ -6,6 +6,11 @@ import classes from "./personal.module.scss";
 // icon
 import {
   RiUser2Fill,
+  RiAccountBoxLine,
+  RiCalendar2Line,
+  RiPhoneLine,
+  RiMailLine,
+  RiMapPin2Line,
   RiInstagramFill,
   RiLinkedinBoxFill,
   RiGithubFill,
@@ -32,24 +37,29 @@ export default function Personal() {
         />
         <ul>
           <li>
-            <span>이름: </span>
+            <RiAccountBoxLine size={18} />
+            <span> 이름: </span>
             <span>임동윤</span>
           </li>
           <li>
-            <span>생년월일: </span>
+            <RiCalendar2Line size={18} />
+            <span> 생년월일: </span>
             <span>1999/09/02</span>
           </li>
           <li>
-            <span>핸드폰: </span>
+            <RiPhoneLine size={18} />
+            <span> 핸드폰: </span>
             <span>010-5863-4725</span>
           </li>
           <li>
-            <span>이메일: </span>
+            <RiMailLine size={18} />
+            <span> 이메일: </span>
             <span>dyyim4725@gmail.com</span>
           </li>
           <li>
-            <span>주소: </span>
-            <span>Cheonan, South Korea (천안)</span>
+            <RiMapPin2Line size={18} />
+            <span> 주소: </span>
+            <span>충청남도 천안시</span>
           </li>
         </ul>
       </div>

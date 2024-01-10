@@ -31,9 +31,11 @@
     font-size: 18px;
 
     li {
+      display: flex;
+      gap: 0.5rem;
       padding-bottom: 16px;
 
-      & > :nth-child(1) {
+      & > :nth-child(2) {
         font-weight: 700;
       }
     }
@@ -86,6 +88,12 @@
   .information_box {
     ul {
       font-size: 14px;
+
+      li {
+        > :nth-child(1) {
+          display: none;
+        }
+      }
     }
   }
 }
