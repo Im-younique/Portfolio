@@ -108,6 +108,7 @@ export default function Resume() {
             className={`${classes.resume_card} ${
               classes.card_0
             } ${makeOrderStyle("experience")}`}
+            onClick={() => handleSelect("experience")}
           >
             <div className={classes.resume_card_title}>
               <RiBriefcaseFill />
@@ -154,6 +155,7 @@ export default function Resume() {
             className={`${classes.resume_card} ${
               classes.card_1
             } ${makeOrderStyle("education")}`}
+            onClick={() => handleSelect("education")}
           >
             <div className={classes.resume_card_title}>
               <RiGraduationCapFill />
@@ -195,6 +197,7 @@ export default function Resume() {
             className={`${classes.resume_card} ${
               classes.card_2
             } ${makeOrderStyle("skills")}`}
+            onClick={() => handleSelect("skills")}
           >
             <div className={classes.resume_card_title}>
               <RiStarFill />
@@ -235,6 +238,7 @@ export default function Resume() {
             className={`${classes.resume_card} ${
               classes.card_3
             } ${makeOrderStyle("etc")}`}
+            onClick={() => handleSelect("etc")}
           >
             <div className={classes.resume_card_title}>
               <RiAddBoxFill />
