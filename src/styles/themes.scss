@@ -4,6 +4,7 @@
   --color-text: #{$text-color-light};
   --color-background: #{$bg-color-beige};
   --color-sub-background: #{$bg-color-light};
+  --color-border: #{$border-color-light};
   // --color-btn: #{$btn-color-1};
 }
 
@@ -11,6 +12,7 @@
   --color-text: #{$text-color-dark};
   --color-background: #{$bg-color-dark};
   --color-sub-background: #{$bg-color-light-dark};
+  --color-border: #{$border-color-dark};
   // --color-btn: #{$btn-color-2};
 }
 
