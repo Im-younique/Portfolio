@@ -38,7 +38,7 @@ const BoxContent = ({ title, icon_name, children }: IProp) => {
         </h2>
       </div>
       <DividerWithIcon icon_name={icon_name} />
-      <div className={classes.pageContent}>{children}</div>
+      {children}
       <RiCloseLine
         size={60}
         color="#ababab"

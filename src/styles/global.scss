@@ -18,3 +18,13 @@ a {
 .wrapper {
   overflow: hidden;
 }
+
+.content-container {
+  padding: 0 24px;
+}
+
+@media (max-width: 480px) {
+  .content-container {
+    padding: 0 15px;
+  }
+}
