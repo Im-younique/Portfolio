@@ -279,7 +279,6 @@ export default function Resume() {
                 </span>
                 <p>실리콘벨리 현업자 특강 참석, 팀 프로젝트 진행</p>
               </div>
-              <span className={classes.color_seperator} />
             </div>
           </div>
         </div>
