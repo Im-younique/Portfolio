@@ -9,6 +9,17 @@
   overflow: hidden;
   overflow-y: auto;
   transition: opacity 0.1s linear 0s;
+  cursor: default;
+}
+
+.close_icon {
+  opacity: 0;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity 0.1s linear 0s;
 }
 
 .view {
@@ -33,14 +44,6 @@
 
 .impactText {
   color: var(--color-impact);
-}
-
-.close_icon {
-  position: absolute;
-  top: 16px;
-  right: 24px;
-  cursor: pointer;
-  z-index: 100;
 }
 
 @media (max-width: 480px) {

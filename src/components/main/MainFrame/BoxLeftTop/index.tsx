@@ -14,7 +14,9 @@ const BoxLeftTop = ({ children }: IProps) => {
 
   return (
     <section className={`${mains !== "none" && classes.shrink}`}>
-      <div className={classes.box}>{children}</div>
+      <div className={classes.box}>
+        <div className={classes.title}>{children}</div>
+      </div>
     </section>
   );
 };

@@ -8,6 +8,13 @@
   align-items: center;
   justify-content: center;
   -webkit-box-align: center;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
 
   & > :nth-child(n) {
     transition: all 0.2s ease-in-out;
@@ -39,7 +46,7 @@
 }
 
 @media (max-width: 1200px) {
-  .box {
+  .title {
     & > :nth-child(1n) {
       font-size: 20px;
       font-weight: 700;

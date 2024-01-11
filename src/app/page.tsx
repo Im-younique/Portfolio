@@ -7,6 +7,7 @@ import { Picture, MainFrame } from "@/components/main";
 const ThemeToggle = dynamic(() => import("@/components/main/ThemeToggle"), {
   ssr: false,
 });
+import About from "@/components/about";
 
 export default function Home() {
   return (
@@ -24,7 +25,9 @@ export default function Home() {
         <MainFrame.Box boxName="about me">
           <MainFrame.BoxTitle title="about me" />
           <MainFrame.BoxContent title="about me" icon_name="profile">
-            <div>Temp</div>
+            <About.Personal />
+            <About.Resume />
+            <About.Badge />
           </MainFrame.BoxContent>
         </MainFrame.Box>
         <MainFrame.Box boxName="my project">
