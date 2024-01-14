@@ -18,7 +18,7 @@ import {
 
 export default function Personal() {
   return (
-    <div className="content-container">
+    <div className="content-container max-container">
       <div className={classes.personal_subtitle}>
         <RiUser2Fill />
         <h6>Personal Info</h6>

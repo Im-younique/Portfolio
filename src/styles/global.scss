@@ -19,6 +19,12 @@ a {
   overflow: hidden;
 }
 
+.max-container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
 .content-container {
   padding: 0 24px;
 }
