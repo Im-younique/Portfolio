@@ -10,9 +10,10 @@ import { IProjectList } from "@/types";
 
 const Box = ({ href, src, name }: IProjectList) => {
   const [position, setPosition] = useState<any>(classes.top);
+  const [isHover, setIsHover] = useState(false);
   const linkRef = useRef<HTMLAnchorElement | null>(null);
 
-  const calculateMousePosition = (e: React.MouseEvent) => {
+  const calculateMousePosition = (e: React.MouseEvent, isIn: boolean) => {
     if (linkRef.current !== null) {
       const targetRect = linkRef.current.getBoundingClientRect();
 
@@ -49,16 +50,19 @@ const Box = ({ href, src, name }: IProjectList) => {
           : setPosition(classes.right);
       }
     }
+    setIsHover(isIn);
   };
 
   return (
     <div className={classes.box}>
       <Link
         href={href}
-        className={classes.link}
+        className={`${classes.link} ${
+          isHover ? classes.mouseEnter : classes.mouseLeave
+        } ${position}`}
         ref={linkRef}
-        onMouseEnter={calculateMousePosition}
-        onMouseLeave={calculateMousePosition}
+        onMouseEnter={(e) => calculateMousePosition(e, true)}
+        onMouseLeave={(e) => calculateMousePosition(e, false)}
       >
         <Image
           src={src}
@@ -67,7 +71,7 @@ const Box = ({ href, src, name }: IProjectList) => {
           height={400}
           className={classes.img}
         />
-        <div className={`${classes.logo_wrapper} ${position}`}>
+        <div className={`${classes.logo_wrapper}`}>
           <span>{name}</span>
         </div>
       </Link>
