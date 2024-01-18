@@ -12,60 +12,41 @@ const Box = ({ href, src, name }: IProjectList) => {
   const [position, setPosition] = useState<any>(classes.top);
   const linkRef = useRef<HTMLAnchorElement | null>(null);
 
-  const calculateMouseInPosition = (e: React.MouseEvent) => {
-    if (linkRef.current !== null) {
-      const targetRect = linkRef.current.getBoundingClientRect();
-      const mouseX = e.clientX - targetRect.left;
-      const mouseY = e.clientY - targetRect.top;
-
-      const divCenterX = targetRect.width / 2;
-      const divCenterY = targetRect.height / 2;
-
-      const deltaX = mouseX - divCenterX;
-      const deltaY = mouseY - divCenterY;
-
-      if (Math.abs(deltaX) > Math.abs(deltaY)) {
-        if (deltaX > 0) {
-          setPosition(classes.right);
-        } else {
-          setPosition(classes.left);
-        }
-      } else {
-        if (deltaY > 0) {
-          setPosition(classes.bottom);
-        } else {
-          setPosition(classes.top);
-        }
-      }
-    }
-  };
-
-  const calculateMouseOutPosition = (e: React.MouseEvent) => {
+  const calculateMousePosition = (e: React.MouseEvent) => {
     if (linkRef.current !== null) {
       const targetRect = linkRef.current.getBoundingClientRect();
 
-      const mouseX = e.clientX - targetRect.left;
-      const mouseY = e.clientY - targetRect.top;
+      const leftORright =
+        Math.abs(e.clientX - targetRect.right) >
+        Math.abs(e.clientX - targetRect.left)
+          ? "left"
+          : "right";
+      const topORbottom =
+        Math.abs(e.clientY - targetRect.top) >
+        Math.abs(e.clientY - targetRect.bottom)
+          ? "bottom"
+          : "top";
 
-      const divCenterX = targetRect.width / 2;
-      const divCenterY = targetRect.height / 2;
-
-      const deltaX = mouseX - divCenterX;
-      const deltaY = mouseY - divCenterY;
-
-      // 마우스가 나간 방향을 출력
-      if (Math.abs(deltaX) > Math.abs(deltaY)) {
-        if (deltaX > 0) {
-          setPosition(classes.right);
-        } else {
-          setPosition(classes.left);
-        }
-      } else {
-        if (deltaY > 0) {
-          setPosition(classes.bottom);
-        } else {
-          setPosition(classes.top);
-        }
+      if (leftORright === "left" && topORbottom === "top") {
+        Math.abs(e.clientX - targetRect.left) >
+        Math.abs(e.clientY - targetRect.top)
+          ? setPosition(classes.top)
+          : setPosition(classes.left);
+      } else if (leftORright === "left" && topORbottom === "bottom") {
+        Math.abs(e.clientX - targetRect.left) >
+        Math.abs(e.clientY - targetRect.bottom)
+          ? setPosition(classes.bottom)
+          : setPosition(classes.left);
+      } else if (leftORright === "right" && topORbottom === "top") {
+        Math.abs(e.clientX - targetRect.right) >
+        Math.abs(e.clientY - targetRect.top)
+          ? setPosition(classes.top)
+          : setPosition(classes.right);
+      } else if (leftORright === "right" && topORbottom === "bottom") {
+        Math.abs(e.clientX - targetRect.right) >
+        Math.abs(e.clientY - targetRect.bottom)
+          ? setPosition(classes.bottom)
+          : setPosition(classes.right);
       }
     }
   };
@@ -76,8 +57,8 @@ const Box = ({ href, src, name }: IProjectList) => {
         href={href}
         className={classes.link}
         ref={linkRef}
-        onMouseEnter={calculateMouseInPosition}
-        onMouseLeave={calculateMouseOutPosition}
+        onMouseEnter={calculateMousePosition}
+        onMouseLeave={calculateMousePosition}
       >
         <Image
           src={src}
