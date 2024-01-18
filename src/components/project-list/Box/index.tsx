@@ -10,9 +10,14 @@ import { IProjectList } from "@/types";
 const Box = ({ href, src, name }: IProjectList) => {
   return (
     <div className={classes.box}>
-      {/* TODO: Link 태그로 변경 */}
       <Link href={href} className={classes.link}>
-        <Image src={src} alt="project-image" fill />
+        <Image
+          src={src}
+          alt="project-image"
+          width={535}
+          height={400}
+          className={classes.img}
+        />
         <div>{name}</div>
       </Link>
     </div>
