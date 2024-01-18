@@ -9,7 +9,7 @@ import classes from "./box.module.scss";
 import { IProjectList } from "@/types";
 
 const Box = ({ href, src, name }: IProjectList) => {
-  const [position, setPosition] = useState<any>(null);
+  const [position, setPosition] = useState<any>(classes.top);
   const linkRef = useRef<HTMLAnchorElement | null>(null);
 
   const calculateMouseInPosition = (e: React.MouseEvent) => {
