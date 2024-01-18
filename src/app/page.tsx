@@ -10,6 +10,9 @@ const ThemeToggle = dynamic(() => import("@/components/main/ThemeToggle"), {
 import About from "@/components/about";
 import ProjectList from "@/components/project-list";
 
+// constants
+import { PROJECTLIST } from "@/constants";
+
 export default function Home() {
   return (
     <>
@@ -35,11 +38,9 @@ export default function Home() {
           <MainFrame.BoxTitle title="my project" />
           <MainFrame.BoxContent title="my project" icon_name="bag">
             <ProjectList.Container>
-              <ProjectList.Box></ProjectList.Box>
-              <ProjectList.Box></ProjectList.Box>
-              <ProjectList.Box></ProjectList.Box>
-              <ProjectList.Box></ProjectList.Box>
-              <ProjectList.Box></ProjectList.Box>
+              {PROJECTLIST.map((val) => (
+                <ProjectList.Box key={val.name} {...val} />
+              ))}
             </ProjectList.Container>
           </MainFrame.BoxContent>
         </MainFrame.Box>
