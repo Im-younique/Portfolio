@@ -8,6 +8,7 @@ const ThemeToggle = dynamic(() => import("@/components/main/ThemeToggle"), {
   ssr: false,
 });
 import About from "@/components/about";
+import ProjectList from "@/components/project-list";
 
 export default function Home() {
   return (
@@ -33,7 +34,13 @@ export default function Home() {
         <MainFrame.Box boxName="my project">
           <MainFrame.BoxTitle title="my project" />
           <MainFrame.BoxContent title="my project" icon_name="bag">
-            <div>Temp</div>
+            <ProjectList.Container>
+              <ProjectList.Box></ProjectList.Box>
+              <ProjectList.Box></ProjectList.Box>
+              <ProjectList.Box></ProjectList.Box>
+              <ProjectList.Box></ProjectList.Box>
+              <ProjectList.Box></ProjectList.Box>
+            </ProjectList.Container>
           </MainFrame.BoxContent>
         </MainFrame.Box>
         <MainFrame.Box boxName="guest book">
