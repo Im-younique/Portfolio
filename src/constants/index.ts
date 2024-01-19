@@ -32,7 +32,7 @@ export const PROJECTLIST: IProjectList[] = [
     src: "/projectImages/weekip/weekip_main.png",
   },
   {
-    name: "boothstamp",
+    name: "Boothstamp",
     href: "project/boothstamp",
     src: "/projectImages/weekip/weekip_main.png",
   },

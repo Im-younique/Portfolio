@@ -9,7 +9,7 @@ import classes from "./box.module.scss";
 import { IProjectList } from "@/types";
 
 const Box = ({ href, src, name }: IProjectList) => {
-  const [position, setPosition] = useState<any>(classes.top);
+  const [position, setPosition] = useState<any>(null);
   const [isHover, setIsHover] = useState(false);
   const linkRef = useRef<HTMLAnchorElement | null>(null);
 
@@ -72,7 +72,7 @@ const Box = ({ href, src, name }: IProjectList) => {
           className={classes.img}
         />
         <div className={`${classes.logo_wrapper}`}>
-          <span>{name}</span>
+          <span className={classes.logo}>{name}</span>
         </div>
       </Link>
     </div>
