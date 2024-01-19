@@ -63,7 +63,7 @@ export default function Resume() {
   };
 
   return (
-    <div className={classes.resume_container}>
+    <div className={`max-container ${classes.resume_container}`}>
       <div className={classes.resume_wrapper}>
         <div className={`content-container ${classes.select_wrapper}`}>
           <div

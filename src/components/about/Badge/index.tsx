@@ -6,7 +6,7 @@ import { RiPresentationFill, RiHeartFill, RiAwardFill } from "@remixicon/react";
 
 export default function Badge() {
   return (
-    <div className={classes.badge_wrapper}>
+    <div className={`max-container ${classes.badge_wrapper}`}>
       <div className={classes.badge_container}>
         <div className={classes.col_3}>
           <RiPresentationFill size={50} />
