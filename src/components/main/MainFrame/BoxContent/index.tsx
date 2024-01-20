@@ -1,3 +1,5 @@
+"use client";
+
 // recoil
 import { useRecoilState } from "recoil";
 import { mainState } from "@/lib/recoil/atoms/mainState";
