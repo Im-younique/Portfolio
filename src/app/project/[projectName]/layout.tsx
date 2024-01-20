@@ -6,11 +6,15 @@ export default function ProjectLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <header>
-        <span>layout {params.projectName}</span>
+    <div className="detail-wrapper">
+      <header className="detail-header">
+        <div className="detail-header-txt-wrap">
+          <h3>{params.projectName}</h3>
+        </div>
       </header>
-      {children}
-    </>
+      <section className="detail-content-wrapper">
+        <div className="detail-content">{children}</div>
+      </section>
+    </div>
   );
 }

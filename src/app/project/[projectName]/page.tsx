@@ -5,8 +5,18 @@ export default function ProjectPage({
 }) {
   return (
     <div>
-      <span>project page</span>
-      <span>{params.projectName}</span>
+      <h1>project page</h1>
+      <h1>{params.projectName}</h1>
+      <h1>project page</h1>
+      <h1>{params.projectName}</h1>
+      <h1>project page</h1>
+      <h1>{params.projectName}</h1>
+      <h1>project page</h1>
+      <h1>{params.projectName}</h1>
+      <h1>project page</h1>
+      <h1>{params.projectName}</h1>
+      <h1>project page</h1>
+      <h1>{params.projectName}</h1>
     </div>
   );
 }
