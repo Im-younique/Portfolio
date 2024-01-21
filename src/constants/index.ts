@@ -1,4 +1,4 @@
-import { IProjectList } from "@/types";
+import { IProjectInfo, IProjectList } from "@/types";
 
 export const PROJECTLIST: IProjectList[] = [
   {
@@ -48,7 +48,7 @@ export const PROJECTLIST: IProjectList[] = [
   },
 ];
 
-export const PROJECTINFO = Object.freeze({
+export const PROJECTINFO: { [key: string]: IProjectInfo } = Object.freeze({
   weekip: {
     title: "세상의 흐름을 읽는 IP - Weekip",
     startDate: "2023/07",
