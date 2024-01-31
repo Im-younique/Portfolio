@@ -95,6 +95,12 @@ a {
   margin: 0 auto;
 }
 
+@media (max-width: 800px) {
+  .detail-content {
+    padding: 0 24px;
+  }
+}
+
 @media (max-width: 600px) {
   .detail-header {
     height: 27rem;
