@@ -36,6 +36,14 @@ export default function ImageSlider({ images }: IProp) {
     }
   };
 
+  const moveSlide = (index: number) => {
+    if (imgContainerRef.current !== null) {
+      imgContainerRef.current.style.transform = `translateX(-${index + 1}00%)`;
+      imgContainerRef.current.style.transition = "0.4s all ease-in-out";
+      setImgIndex(index + 1);
+    }
+  };
+
   useEffect(() => {
     if (imgIndex === 0) {
       setImgIndex(images.length);
@@ -85,7 +93,22 @@ export default function ImageSlider({ images }: IProp) {
           <RiArrowRightSLine />
         </button>
       </div>
-      <div className={classes.imgSelectorWrapper}></div>
+      <div className={classes.imgSelectorWrapper}>
+        {images.map(({ src, alt }, idx) => (
+          <div
+            key={`${src}${idx}`}
+            className={classes.imgSelectorBox}
+            onClick={() => moveSlide(idx)}
+          >
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              className={`${imgIndex === idx + 1 && classes.selected}`}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

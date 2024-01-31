@@ -44,7 +44,20 @@
 }
 
 .imgSelectorWrapper {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.selected {
+  border: 3px solid var(--color-impact);
 }
 
 .imgSelectorBox {
+  & > img {
+    flex: none;
+    position: relative !important;
+    height: unset !important;
+    object-fit: scale-down;
+  }
 }
