@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  width: inherit;
+}
+
+.imgBox {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  & > img {
+    position: relative !important;
+    height: unset !important;
+    object-fit: cover;
+  }
+}
+
+.arrowBtn {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    & > :nth-child(n) {
+      opacity: 0.5;
+    }
+  }
+}
+
+.leftBtn {
+  left: 0;
+}
+
+.rightBtn {
+  right: 0;
+}
