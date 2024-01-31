@@ -5,10 +5,16 @@
 
 .imgBox {
   position: relative;
-  display: flex;
   overflow: hidden;
+}
+
+.imgContainer {
+  display: flex;
+  transform: translateX(-100%);
+  transition: 0.4s all ease-in-out;
 
   & > img {
+    flex: none;
     position: relative !important;
     height: unset !important;
     object-fit: cover;
@@ -35,4 +41,10 @@
 
 .rightBtn {
   right: 0;
+}
+
+.imgSelectorWrapper {
+}
+
+.imgSelectorBox {
 }

@@ -1,34 +1,17 @@
 import Image from "next/image";
 
+// components
 import { ImageSlider } from "./components";
+
+// constants
+import { WEEKIPIMAGE } from "./constants";
 
 export default function WeekipDetail() {
   return (
     <>
       <div>
         <h2>Demo사진</h2>
-        <ImageSlider>
-          <Image
-            src="/projectImages/weekip/weekip_main.png"
-            alt="위킵메인"
-            fill
-          />
-          <Image
-            src="/projectImages/weekip/weekip_content.png"
-            alt="위킵콘텐츠"
-            fill
-          />
-          <Image
-            src="/projectImages/weekip/weekip_login.png"
-            alt="위킵로그인"
-            fill
-          />
-          <Image
-            src="/projectImages/weekip/weekip_about.png"
-            alt="위킵소개"
-            fill
-          />
-        </ImageSlider>
+        <ImageSlider images={WEEKIPIMAGE} />
       </div>
       <div>
         <h2>성과/리스트</h2>
