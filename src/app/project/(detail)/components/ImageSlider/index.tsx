@@ -38,9 +38,23 @@ export default function ImageSlider({ images }: IProp) {
 
   const moveSlide = (index: number) => {
     if (imgContainerRef.current !== null) {
-      imgContainerRef.current.style.transform = `translateX(-${index + 1}00%)`;
-      imgContainerRef.current.style.transition = "0.4s all ease-in-out";
-      setImgIndex(index + 1);
+      if (imgIndex === 1 && index === images.length - 1) {
+        imgContainerRef.current.style.transform = `translateX(0%)`;
+        imgContainerRef.current.style.transition = "0.4s all ease-in-out";
+        setImgIndex(0);
+      } else if (imgIndex === images.length && index === 0) {
+        imgContainerRef.current.style.transform = `translateX(-${
+          images.length + 1
+        }00%)`;
+        imgContainerRef.current.style.transition = "0.4s all ease-in-out";
+        setImgIndex(images.length + 1);
+      } else {
+        imgContainerRef.current.style.transform = `translateX(-${
+          index + 1
+        }00%)`;
+        imgContainerRef.current.style.transition = "0.4s all ease-in-out";
+        setImgIndex(index + 1);
+      }
     }
   };
 
