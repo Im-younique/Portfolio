@@ -16,3 +16,18 @@ export const WEEKIPIMAGE = [
     alt: "위킵소개",
   },
 ];
+
+export const REDUCKIMAGE = [
+  {
+    src: "/projectImages/reDuck/QnA.png",
+    alt: "리덕 Q&A",
+  },
+  {
+    src: "/projectImages/reDuck/Detail_1.png",
+    alt: "리덕 게시글 상세",
+  },
+  {
+    src: "/projectImages/reDuck/Detail_2.png",
+    alt: "리덕 게시글 상세_댓글",
+  },
+];
