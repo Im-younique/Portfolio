@@ -7,6 +7,11 @@
     margin: 1rem 0;
   }
 
+  & > :nth-child(n).opend + .opend {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
   & > :nth-child(1).opend {
     margin: 0;
     margin-bottom: 1rem;

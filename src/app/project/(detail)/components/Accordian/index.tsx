@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
 import Group from "./Group";
 
@@ -8,7 +8,12 @@ import clasees from "./accordian.module.scss";
 
 import { RiArrowDownSLine, RiArrowUpSLine } from "@remixicon/react";
 
-const Accordian = () => {
+interface IProp {
+  title: string;
+  children: React.ReactNode | string;
+}
+
+const Accordian = ({ title, children }: IProp) => {
   const [open, setOpen] = useState<boolean>(false);
   return (
     <div className={`${clasees.container} ${open && clasees.opend}`}>
@@ -16,13 +21,13 @@ const Accordian = () => {
         className={clasees.titleBox}
         onClick={() => setOpen((prev) => !prev)}
       >
-        <h2>Title</h2>
+        <h2>{title}</h2>
         {open ? <RiArrowUpSLine /> : <RiArrowDownSLine />}
       </section>
       <section
         className={`${clasees.contentBox} ${open && clasees.contentBoxOpen}`}
       >
-        <p>Content</p>
+        <p>{children}</p>
       </section>
     </div>
   );
