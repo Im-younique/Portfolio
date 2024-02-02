@@ -1,7 +1,7 @@
 "use client";
 
 // components
-import { ImageSlider, LinkText, Accordian } from "./components";
+import { ImageSlider, LinkText, Accordian, ListBlockquote } from "./components";
 
 // constants
 import { WEEKIPIMAGE } from "./constants";
@@ -15,6 +15,11 @@ export default function WeekipDetail() {
       </div>
       <div>
         <h2>성과</h2>
+        <ListBlockquote.Container>
+          <ListBlockquote.Text>aa</ListBlockquote.Text>
+          <ListBlockquote.Text>bb</ListBlockquote.Text>
+          <ListBlockquote.Text>cc</ListBlockquote.Text>
+        </ListBlockquote.Container>
       </div>
       <div>
         <h2>관련링크</h2>
@@ -25,6 +30,7 @@ export default function WeekipDetail() {
         <Accordian.Group>
           <Accordian title="React">
             빠른 개발을 위해 제게 가장 익숙한 툴인 React를 선택하였습니다.
+            나아가 ErrorBoundary를 적용하며 사용자 경험 개선에 노력했습니다.
           </Accordian>
           <Accordian title="Next">
             유저 사이트의 SEO를 통한 사이트 검색용이를 위해 Next를 선택하여
@@ -41,7 +47,9 @@ export default function WeekipDetail() {
           </Accordian>
           <Accordian title="Firebase">
             초기 웹사이트의 비용절감을 위해 Firebase를 선택하였고 전문 백엔드
-            개발자가 없는 문제점을 해결할 수 있었습니다.
+            개발자가 없는 문제점을 해결할 수 있었습니다. 더하여 간단한
+            설정만으로 보안성 뿐만 아니라 푸쉬알림, 예약배포, 가비지 컬렉터 등의
+            기능을 구현할 수 있었습니다.
           </Accordian>
           <Accordian title="Elastic Search">
             Firebase의 단점인 인덱싱을 통한 빠른 검색을 할 수 없는 기술적한계를

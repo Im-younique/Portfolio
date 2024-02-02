@@ -1,0 +1,22 @@
+.container {
+  border-left: 5px solid #333;
+  padding-left: 0;
+  margin-left: 10px;
+}
+
+.listWrapper {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 25px;
+
+  li {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+
+    &::before {
+      content: "-";
+      padding-right: 10px;
+    }
+  }
+}
