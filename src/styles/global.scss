@@ -66,8 +66,8 @@ a {
   z-index: 1;
 
   h3 {
-    font-weight: 600;
-    font-size: 2rem;
+    font-weight: 700;
+    font-size: 2.25rem;
     line-height: 1.25;
     letter-spacing: -0.5px;
   }
@@ -95,6 +95,13 @@ a {
   margin: 0 auto;
 }
 
+.detail-content-section {
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
 @media (max-width: 800px) {
   .detail-content {
     padding: 0 24px;
@@ -109,6 +116,11 @@ a {
   .detail-header-txt-wrap {
     padding: 0 20px;
     width: 100%;
+
+    h3 {
+      font-size: 2rem;
+    }
+
     p {
       padding-top: 2rem;
       font-size: 0.8rem;
@@ -117,5 +129,11 @@ a {
 
   .detail-content-wrapper {
     margin-top: 27rem;
+  }
+
+  .detail-content-section {
+    h2 {
+      font-size: 24px;
+    }
   }
 }

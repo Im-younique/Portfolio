@@ -21,7 +21,7 @@ const Accordian = ({ title, children }: IProp) => {
         className={clasees.titleBox}
         onClick={() => setOpen((prev) => !prev)}
       >
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         {open ? <RiArrowUpSLine /> : <RiArrowDownSLine />}
       </section>
       <section

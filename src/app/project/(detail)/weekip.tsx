@@ -9,23 +9,29 @@ import { WEEKIPIMAGE } from "./constants";
 export default function WeekipDetail() {
   return (
     <>
-      <div>
-        <h2>Demo사진</h2>
-        <ImageSlider images={WEEKIPIMAGE} />
-      </div>
-      <div>
+      <div className="detail-content-section">
         <h2>성과</h2>
         <ListBlockquote.Container>
-          <ListBlockquote.Text>aa</ListBlockquote.Text>
-          <ListBlockquote.Text>bb</ListBlockquote.Text>
-          <ListBlockquote.Text>cc</ListBlockquote.Text>
+          <ListBlockquote.Text>
+            weekip.co (유저사이트), weekip.me/admin (관리자 사이트) 기획 부터
+            개발까지 총괄
+          </ListBlockquote.Text>
+          <ListBlockquote.Text>
+            유저사이트에서 200명 트래픽 획득 (Google Analytics 기반)
+          </ListBlockquote.Text>
+          <ListBlockquote.Text>
+            관리자 사이트 개발시, Tiptap Editor를 확장한 경험을 바탕으로 npm
+            오픈소스 배포
+          </ListBlockquote.Text>
+          <ListBlockquote.Text>
+            초기 lighthouse 퍼포먼스 점수 50점 → 92점으로 향상
+          </ListBlockquote.Text>
+          <ListBlockquote.Text>
+            서비스 소개 페이지 인터렉티브 웹페이지 디자인으로 개발
+          </ListBlockquote.Text>
         </ListBlockquote.Container>
       </div>
-      <div>
-        <h2>관련링크</h2>
-        <LinkText href="https://www.weekip.co" text="weekip 페이지 바로가기" />
-      </div>
-      <div>
+      <div className="detail-content-section">
         <h2>사용기술</h2>
         <Accordian.Group>
           <Accordian title="React">
@@ -68,8 +74,17 @@ export default function WeekipDetail() {
           </Accordian>
         </Accordian.Group>
       </div>
-      <div>
-        <h2>느낀점?</h2>
+      <div className="detail-content-section">
+        <h2>Demo사진</h2>
+        <ImageSlider images={WEEKIPIMAGE} />
+      </div>
+      <div className="detail-content-section">
+        <h2>관련링크</h2>
+        <LinkText href="https://www.weekip.co" text="weekip 페이지 바로가기" />
+        <LinkText
+          href="https://www.npmjs.com/package/tiptap-extension-resize-image"
+          text="npm 오픈소스, Tiptap Image Resize"
+        />
       </div>
     </>
   );
