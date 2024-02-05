@@ -21,12 +21,21 @@
   }
 }
 
+.mobImageContainer {
+  & > img {
+    width: 100% !important;
+    height: 400px !important;
+    object-fit: contain;
+  }
+}
+
 .arrowBtn {
   position: absolute;
   top: 50%;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: var(--color-text);
 
   &:hover {
     & > :nth-child(n) {
@@ -46,6 +55,7 @@
 .imgSelectorWrapper {
   margin-top: 1rem;
   display: flex;
+  justify-content: space-evenly;
   gap: 0.5rem;
 }
 
@@ -59,5 +69,13 @@
     position: relative !important;
     height: unset !important;
     object-fit: scale-down;
+  }
+}
+
+.mobImageSelector {
+  & > img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: contain;
   }
 }

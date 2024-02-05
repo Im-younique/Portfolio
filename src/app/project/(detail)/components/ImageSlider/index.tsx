@@ -9,9 +9,10 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from "@remixicon/react";
 
 interface IProp {
   images: { src: string; alt: string }[];
+  isMobile?: boolean;
 }
 
-export default function ImageSlider({ images }: IProp) {
+export default function ImageSlider({ images, isMobile = false }: IProp) {
   const [imgIndex, setImgIndex] = useState<number>(1);
 
   const imgContainerRef = useRef<HTMLDivElement>(null);
@@ -83,7 +84,12 @@ export default function ImageSlider({ images }: IProp) {
   return (
     <div className={classes.container}>
       <div className={classes.imgBox}>
-        <div className={classes.imgContainer} ref={imgContainerRef}>
+        <div
+          className={`${classes.imgContainer} ${
+            isMobile && classes.mobImageContainer
+          }`}
+          ref={imgContainerRef}
+        >
           <Image
             src={images[images.length - 1].src}
             alt={images[images.length - 1].alt}
@@ -111,7 +117,9 @@ export default function ImageSlider({ images }: IProp) {
         {images.map(({ src, alt }, idx) => (
           <div
             key={`${src}${idx}`}
-            className={classes.imgSelectorBox}
+            className={`${classes.imgSelectorBox} ${
+              isMobile && classes.mobImageSelector
+            }`}
             onClick={() => moveSlide(idx)}
           >
             <Image
