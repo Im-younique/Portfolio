@@ -37,11 +37,16 @@ export default function ReduckDetail() {
             SEO를 최적화 할 수 있는 Next를 선택했습니다.
           </Accordian>
           <Accordian title="TypeScript">
-            코드 작성시 타입을 명시함으로써 실수를 줄이고자 TypeScript를
-            선택하였습니다. 다만 관리자 사이트는 Material UI Template을 무료로
-            활용하기 위해 JavaScript를 사용하였습니다.
+            이전까지 JavaScript만으로 개발했지만 트렌드의 변환에 맞춰
+            TypeScript를 배우면서 적용하고자 도입하였습니다. 코드 작성시 타입을
+            명시함으로써 실수가 줄어들고 협업과정에서 코드를 확인하기 편하다는
+            것을 깨닫게 됐습니다.
           </Accordian>
-          <Accordian title="TailwindCSS">ㄴㅇ</Accordian>
+          <Accordian title="TailwindCSS">
+            초기 디자이너가 없이 프로젝트를 시작했기 때문에 간편하게 스타일링 할
+            수 있는 TailwindCSS를 선택했습니다. 현재는 디자이너가 추가되어
+            TailwindCSS 설정 및 확장으로 변경하여 스타일을 적용 중 입니다.
+          </Accordian>
           <Accordian title="Light House">
             Light House를 통해 웹 사이트의 성능을 측정하고 더 나은 사용자 경험을
             만들어 갔습니다.
