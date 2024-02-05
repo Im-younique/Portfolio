@@ -50,3 +50,22 @@ export const PORTFOLIOIMAGE = [
     alt: "포트폴리오 프로젝트",
   },
 ];
+
+export const CHEERDOIMAGE = [
+  {
+    src: "/projectImages/cheerDo/Todo1.png",
+    alt: "CheerDo 메인",
+  },
+  {
+    src: "/projectImages/cheerDo/Todo2.png",
+    alt: "CheerDo 캘린더",
+  },
+  {
+    src: "/projectImages/cheerDo/Todo3.png",
+    alt: "CheerDo 친구목록",
+  },
+  {
+    src: "/projectImages/cheerDo/Todo1.png",
+    alt: "CheerDo 편지목록",
+  },
+];
