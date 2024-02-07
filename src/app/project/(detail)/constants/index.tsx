@@ -69,3 +69,22 @@ export const CHEERDOIMAGE = [
     alt: "CheerDo 편지목록",
   },
 ];
+
+export const KMWINEIMAGE = [
+  {
+    src: "/projectImages/1kmwine/1kmwine1.jpeg",
+    alt: "1kmwine vendor 메인",
+  },
+  {
+    src: "/projectImages/1kmwine/1kmwine2.jpeg",
+    alt: "1kmwine vendor 상품설정",
+  },
+  {
+    src: "/projectImages/1kmwine/1kmwine3.jpeg",
+    alt: "1kmwine vendor 주문목록",
+  },
+  {
+    src: "/projectImages/1kmwine/1kmwine4.jpeg",
+    alt: "1kmwine vendor 방문대기 목록",
+  },
+];
