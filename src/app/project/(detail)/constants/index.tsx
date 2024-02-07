@@ -30,6 +30,10 @@ export const REDUCKIMAGE = [
     src: "/projectImages/reDuck/Detail_2.png",
     alt: "리덕 게시글 상세_댓글",
   },
+  {
+    src: "/projectImages/reDuck/GPT.png",
+    alt: "리덕 GPT",
+  },
 ];
 
 export const PORTFOLIOIMAGE = [
@@ -124,5 +128,20 @@ export const BOOTHIMAGE = [
   {
     src: "/projectImages/BoothStamp/Booth4.jpeg",
     alt: "BoothStamp QR스캔",
+  },
+];
+
+export const CULTUREIMAGE = [
+  {
+    src: "/projectImages/culture/Dae1.png",
+    alt: "청소년 문화의집 메인",
+  },
+  {
+    src: "/projectImages/culture/Dae2.png",
+    alt: "청소년 문화의집 미로찾기 게임",
+  },
+  {
+    src: "/projectImages/culture/Dae3.png",
+    alt: "청소년 문화의집 스코어보드",
   },
 ];
