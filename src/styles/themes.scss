@@ -1,6 +1,7 @@
 @use "./color.scss" as *;
 
 [data-theme="light"] {
+  --profile-image: url(../../public/myImages/profile_white.jpg);
   --color-text: #{$text-color-light};
   --color-background: #{$bg-color-beige};
   --color-sub-background: #{$bg-color-light};
@@ -10,6 +11,7 @@
 }
 
 [data-theme="dark"] {
+  --profile-image: url(../../public/myImages/profile_black.jpg);
   --color-text: #{$text-color-dark};
   --color-background: #{$bg-color-dark};
   --color-sub-background: #{$bg-color-light-dark};

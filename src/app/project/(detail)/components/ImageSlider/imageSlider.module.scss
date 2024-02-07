@@ -1,0 +1,81 @@
+.container {
+  position: relative;
+  width: inherit;
+}
+
+.imgBox {
+  position: relative;
+  overflow: hidden;
+}
+
+.imgContainer {
+  display: flex;
+  transform: translateX(-100%);
+  transition: 0.4s all ease-in-out;
+
+  & > img {
+    flex: none;
+    position: relative !important;
+    height: unset !important;
+    object-fit: cover;
+  }
+}
+
+.mobImageContainer {
+  & > img {
+    width: 100% !important;
+    height: 400px !important;
+    object-fit: contain;
+  }
+}
+
+.arrowBtn {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+
+  &:hover {
+    & > :nth-child(n) {
+      opacity: 0.5;
+    }
+  }
+}
+
+.leftBtn {
+  left: 0;
+}
+
+.rightBtn {
+  right: 0;
+}
+
+.imgSelectorWrapper {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+.selected {
+  border: 3px solid var(--color-impact);
+}
+
+.imgSelectorBox {
+  & > img {
+    flex: none;
+    position: relative !important;
+    height: unset !important;
+    object-fit: scale-down;
+  }
+}
+
+.mobImageSelector {
+  & > img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: contain;
+  }
+}

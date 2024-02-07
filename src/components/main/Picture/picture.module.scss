@@ -1,11 +1,23 @@
 .picture_container {
+  background-image: var(--profile-image);
   padding: 0;
+  opacity: 0;
   margin-top: 24px;
   margin-left: 24px;
   height: calc(100vh - 48px);
   background-size: cover;
   background-position: center center;
   width: calc(33.3333333333% - 48px);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 992px) {

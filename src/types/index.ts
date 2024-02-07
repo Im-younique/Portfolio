@@ -11,3 +11,9 @@ export interface IProjectList {
   href: string;
   src: string;
 }
+
+export interface IProjectInfo {
+  title: string;
+  startDate: string;
+  endDate: string;
+}

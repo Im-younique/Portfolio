@@ -6,6 +6,10 @@ body {
   color: var(--color-text);
 }
 
+body {
+  margin: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -32,5 +36,104 @@ a {
 @media (max-width: 480px) {
   .content-container {
     padding: 0 15px;
+  }
+}
+
+/* 프로젝트 상세 페이지 */
+.detail-layout {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.detail-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--color-impact);
+  height: 22.5rem;
+}
+
+.detail-header-txt-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 3rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 670px;
+  z-index: 1;
+
+  h3 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+  }
+
+  p {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-top: 3rem;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+}
+
+.detail-content-wrapper {
+  background-color: var(--color-background);
+  width: 100%;
+  margin-top: 22.5rem;
+  padding: 3rem 0 4rem;
+}
+
+.detail-content {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.detail-content-section {
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 800px) {
+  .detail-content {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .detail-header {
+    height: 27rem;
+  }
+
+  .detail-header-txt-wrap {
+    padding: 0 20px;
+    width: 100%;
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      padding-top: 2rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .detail-content-wrapper {
+    margin-top: 27rem;
+  }
+
+  .detail-content-section {
+    h2 {
+      font-size: 24px;
+    }
   }
 }
