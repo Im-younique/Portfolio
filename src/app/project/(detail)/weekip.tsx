@@ -58,9 +58,9 @@ export default function WeekipDetail() {
             기능을 구현할 수 있었습니다.
           </Accordian>
           <Accordian title="Elastic Search">
-            Firebase의 단점인 인덱싱을 통한 빠른 검색을 할 수 없는 기술적한계를
-            극복하기위해 검색기능을 개발할 때 Elastic Search를 사용하여 더 빠른
-            컨텐츠 검색을 지원하였습니다.
+            Firebase의 단점인 부족한 텍스트 검색 지원을 보완하고자 검색기능을
+            개발할 때 Elastic Search를 사용하여 더 빠른 컨텐츠 검색을
+            지원하였습니다.
           </Accordian>
           <Accordian title="Google Analystics">
             Google Analytics를 활용하여 사용자의 웹사이트 내 활동을 추적하고
