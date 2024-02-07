@@ -107,3 +107,22 @@ export const MOONDIARYIMAGE = [
     alt: "달이 들어주는 오늘 일기 응답",
   },
 ];
+
+export const BOOTHIMAGE = [
+  {
+    src: "/projectImages/BoothStamp/Booth1.jpeg",
+    alt: "BoothStamp 초기화면",
+  },
+  {
+    src: "/projectImages/BoothStamp/Booth2.jpeg",
+    alt: "BoothStamp 메인화면",
+  },
+  {
+    src: "/projectImages/BoothStamp/Booth3.jpeg",
+    alt: "BoothStamp 부스설명",
+  },
+  {
+    src: "/projectImages/BoothStamp/Booth4.jpeg",
+    alt: "BoothStamp QR스캔",
+  },
+];
