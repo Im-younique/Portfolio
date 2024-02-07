@@ -48,6 +48,10 @@ export default function CheerdoDetail() {
           text="Figma Design"
         />
         <LinkText
+          href="https://wary-honesty-68e.notion.site/CNU-c4dd0158b9ea46739dc447b4ff2e7631"
+          text="CNU SW Academy 공부 기록"
+        />
+        <LinkText
           href="https://github.com/SWAcademy-Team-3/todoclient"
           text="Github Repository"
         />

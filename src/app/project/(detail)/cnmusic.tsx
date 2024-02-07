@@ -4,7 +4,7 @@
 import { ImageSlider, LinkText, Accordian, ListBlockquote } from "./components";
 
 // constants
-import { CULTUREIMAGE } from "./constants";
+import { MUSICIMAGE } from "./constants";
 
 export default function CnmusicDetail() {
   return (
@@ -53,7 +53,7 @@ export default function CnmusicDetail() {
       </div>
       <div className="detail-content-section">
         <h2>Demo사진</h2>
-        <ImageSlider images={CULTUREIMAGE} />
+        <ImageSlider images={MUSICIMAGE} />
       </div>
       <div className="detail-content-section">
         <h2>관련링크</h2>
