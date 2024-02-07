@@ -59,6 +59,10 @@ export default function PortfolioDetail() {
           href="https://www.reduck.site/board/7d19dce3-df32-4be3-8129-33bfad8e52b3"
           text="다크모드 적용기 포스팅"
         />
+        <LinkText
+          href="https://github.com/Im-younique/Portfolio"
+          text="Github Repository"
+        />
       </div>
     </>
   );

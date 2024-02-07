@@ -47,6 +47,10 @@ export default function CheerdoDetail() {
           href="https://www.figma.com/file/eOjXOsdNDWDm6f2yBn9i1W/Prototype-Design?type=design&node-id=0%3A1&mode=design&t=V6TqxXOGoleUjO3M-1"
           text="Figma Design"
         />
+        <LinkText
+          href="https://github.com/SWAcademy-Team-3/todoclient"
+          text="Github Repository"
+        />
       </div>
     </>
   );

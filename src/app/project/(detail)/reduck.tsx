@@ -64,6 +64,10 @@ export default function ReduckDetail() {
           href="https://www.npmjs.com/package/tiptap-extension-resize-image"
           text="npm 오픈소스, Tiptap Image Resize"
         />
+        <LinkText
+          href="https://github.com/re-Duck"
+          text="Github Organization"
+        />
       </div>
     </>
   );
