@@ -145,3 +145,22 @@ export const CULTUREIMAGE = [
     alt: "청소년 문화의집 스코어보드",
   },
 ];
+
+export const MUSICIMAGE = [
+  {
+    src: "/projectImages/musicFesta/Music1.png",
+    alt: "뮤직페스타 메인 1",
+  },
+  {
+    src: "/projectImages/musicFesta/Music2.png",
+    alt: "뮤직페스타 메인 2",
+  },
+  {
+    src: "/projectImages/musicFesta/Music3.png",
+    alt: "뮤직페스타 비디오 갤러리",
+  },
+  {
+    src: "/projectImages/musicFesta/Music5.png",
+    alt: "뮤직페스타 팀 소개",
+  },
+];
