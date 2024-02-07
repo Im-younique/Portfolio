@@ -88,3 +88,22 @@ export const KMWINEIMAGE = [
     alt: "1kmwine vendor 방문대기 목록",
   },
 ];
+
+export const MOONDIARYIMAGE = [
+  {
+    src: "/projectImages/moonDiary/Moon1.jpeg",
+    alt: "달이 들어주는 오늘 Splash",
+  },
+  {
+    src: "/projectImages/moonDiary/Moon2.jpeg",
+    alt: "달이 들어주는 오늘 Main",
+  },
+  {
+    src: "/projectImages/moonDiary/Moon3.png",
+    alt: "달이 들어주는 오늘 일기 기록",
+  },
+  {
+    src: "/projectImages/moonDiary/Moon4.jpeg",
+    alt: "달이 들어주는 오늘 일기 응답",
+  },
+];
