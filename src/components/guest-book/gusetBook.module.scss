@@ -1,0 +1,67 @@
+.container {
+  margin: 0 auto;
+  position: relative;
+  padding: 5px 12px 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 8px 16px;
+  border: 2px solid var(--color-border);
+  border-radius: 15px;
+  height: calc(100vh - 425px);
+  overflow-y: scroll;
+
+  & > :nth-child(n) {
+    background-color: #ccf6c8;
+  }
+
+  & > :nth-child(2n) {
+    background-color: #fafcc2;
+  }
+
+  & > :nth-child(3n) {
+    background-color: #f6d6ad;
+  }
+
+  & > :nth-child(5n) {
+    background-color: #f9c0c0;
+  }
+}
+
+.bubbleText {
+  padding: 8px 16px;
+  color: black;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 1vh;
+  border: 1px solid var(--color-border);
+  border-radius: 15px;
+  padding: 12px;
+
+  input {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    width: 90%;
+  }
+}
+
+.send {
+  position: absolute;
+  right: 12px;
+}
+
+@media (max-width: 480px) {
+  .box {
+    height: calc(100vh - 415px);
+  }
+}
