@@ -47,6 +47,10 @@ export default function ReduckDetail() {
             수 있는 TailwindCSS를 선택했습니다. 현재는 디자이너가 추가되어
             TailwindCSS 설정 및 확장으로 변경하여 스타일을 적용 중 입니다.
           </Accordian>
+          <Accordian title="Story book">
+            UI 컴포넌트들을 테스팅하고 협업하여 만들어진 컴포넌트를 관리하고
+            알아보기 편하게 하기위해 사용했습니다.
+          </Accordian>
           <Accordian title="Light House">
             Light House를 통해 웹 사이트의 성능을 측정하고 더 나은 사용자 경험을
             만들어 갔습니다.
