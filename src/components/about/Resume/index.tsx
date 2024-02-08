@@ -167,7 +167,7 @@ export default function Resume() {
                   <span>천안중앙고등학교</span>
                 </h6>
                 <span className={classes.date}>
-                  <RiCalendar2Fill size={15} /> 2015.03 ~ 2018.2
+                  <RiCalendar2Fill size={15} /> 2015.03 ~ 2018.02
                 </span>
                 <ul>
                   <li>과학중점과정 이수</li>
@@ -180,13 +180,12 @@ export default function Resume() {
                   <span>충남대학교 -</span> <span>컴퓨터공학과 학사</span>
                 </h6>
                 <span className={classes.date}>
-                  <RiCalendar2Fill size={15} /> 2018.03 ~ 2024.2 (졸업예정)
+                  <RiCalendar2Fill size={15} /> 2018.03 ~ 2024.02
                 </span>
                 <ul>
                   <li>Grade: 3.7 / 4.5</li>
                   <li>
-                    2023 정보보호동아리 ARGOS - 2023년도 부회장, 2022년도
-                    기획부장
+                    정보보호동아리 ARGOS - 2023년도 부회장, 2022년도 기획부장
                   </li>
                   <li>2022 컴퓨터융합학부 학생회 MEMORY - 기획부장</li>
                 </ul>
@@ -251,6 +250,7 @@ export default function Resume() {
                 </h6>
                 <span className={classes.date}>
                   <RiCalendar2Fill size={15} /> 2022.12 ~ 2023.01 / 2023.12 ~
+                  2024.01
                 </span>
                 <p>
                   대학생 멘토로 초등학교에 찾아가 AI 및 자율주행자동차 교육 진행
