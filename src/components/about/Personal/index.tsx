@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 // styles
 import classes from "./personal.module.scss";
@@ -64,9 +65,18 @@ export default function Personal() {
         </ul>
       </div>
       <div className={classes.link_wrapper}>
-        <RiGithubFill size={35} />
-        <RiLinkedinBoxFill size={35} color="#0A66C2" />
-        <RiInstagramFill size={35} color="#E4405F" />
+        <Link href="https://github.com/Im-younique" target="_blank">
+          <RiGithubFill size={35} />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/%EB%8F%99%EC%9C%A4-%EC%9E%84-018b9724a/"
+          target="_blank"
+        >
+          <RiLinkedinBoxFill size={35} color="#0A66C2" />
+        </Link>
+        <Link href="https://www.instagram.com/im_younique/" target="_blank">
+          <RiInstagramFill size={35} color="#E4405F" />
+        </Link>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 // styles
 import "@/styles/global.scss";
+import { IBM_Plex_Sans_KR } from "next/font/google";
 
 // recoil
 import RecoilRootProvider from "@/lib/recoil/recoilRootProvider";
@@ -9,7 +10,16 @@ import RecoilRootProvider from "@/lib/recoil/recoilRootProvider";
 export const metadata: Metadata = {
   title: "임동윤 포트폴리오",
   description: "세상을 윤택하게 만드는 프론트엔드 개발자 임동윤입니다.",
+  openGraph: {
+    images: ["/myImages/profile_black.jpg", "/myImages/profile_white.jpg"],
+  },
 };
+
+const ibm_sans = IBM_Plex_Sans_KR({
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function RootLayout({
   children,
@@ -58,7 +68,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en">
+    <html lang="ko" className={`${ibm_sans.className}`}>
       <body suppressHydrationWarning={true}>
         <script
           dangerouslySetInnerHTML={{
