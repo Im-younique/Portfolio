@@ -18,8 +18,7 @@ export default function RootLayout({
 }) {
   // 즉시 실행함수로 감싸서 페이지가 렌더링될때 바로 실행되도록함
   const themeInitializerScript = `(function() {
-    ${setInitialColorMode.toString()}
-    setInitialColorMode();
+    (${setInitialColorMode.toString()})()
     })()
   `;
 
@@ -44,8 +43,6 @@ export default function RootLayout({
 
       return "light";
     }
-
-    console.log("즉시 실행 테스트, 빌드 에러 해결");
 
     //현재 테마 모드
     const currentColorMode = getInitialColorMode();
