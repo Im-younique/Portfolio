@@ -53,6 +53,7 @@ a {
   width: 100%;
   z-index: -1;
   background-color: var(--color-impact);
+  color: white;
   height: 22.5rem;
 }
 
@@ -134,6 +135,14 @@ a {
   .detail-content-section {
     h2 {
       font-size: 24px;
+    }
+  }
+}
+
+[data-theme="light"] {
+  .detail-content-section {
+    h2 {
+      color: #444;
     }
   }
 }

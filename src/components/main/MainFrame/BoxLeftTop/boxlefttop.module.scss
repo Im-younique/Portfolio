@@ -82,3 +82,19 @@
     }
   }
 }
+
+[data-theme="light"] {
+  .title {
+    & > :nth-child(1) {
+      color: #777;
+    }
+
+    & > :nth-child(2) {
+      color: #555;
+
+      span {
+        color: #777;
+      }
+    }
+  }
+}
