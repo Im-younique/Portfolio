@@ -26,7 +26,6 @@ export default function RootLayout({
   // 초기 테마를 설정하는 함수
   function setInitialColorMode() {
     function getInitialColorMode() {
-      console.log("즉시 실행 테스트");
       // 로컬스토리지에서 'theme' 값 가져오기
       const persistedPreferenceMode = window.localStorage.getItem("theme");
       const hasPersistedPreference =
@@ -46,6 +45,8 @@ export default function RootLayout({
       return "light";
     }
 
+    console.log("즉시 실행 테스트, 빌드 에러 해결");
+
     //현재 테마 모드
     const currentColorMode = getInitialColorMode();
     const element = document.body;
@@ -54,6 +55,9 @@ export default function RootLayout({
     // 현재 다크모드라면 다크모드를 바로 적용 시켜줌
     if (currentColorMode === "dark")
       document.body.setAttribute("data-theme", "dark");
+
+    if (currentColorMode === "light")
+      document.body.setAttribute("data-theme", "light");
   }
 
   return (
