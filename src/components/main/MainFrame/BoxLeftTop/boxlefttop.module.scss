@@ -63,3 +63,22 @@
     }
   }
 }
+
+@media (min-width: 1920px) {
+  .title {
+    & > :nth-child(1n) {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    & > :nth-child(2) {
+      margin: 20px 0;
+      font-size: 80px;
+      font-weight: 900;
+
+      span {
+        font-size: 40px;
+      }
+    }
+  }
+}

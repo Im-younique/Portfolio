@@ -46,6 +46,12 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .title_style {
+    font-size: 60px;
+  }
+}
+
 .hidden {
   opacity: 0;
   transition: opacity 0s linear;
