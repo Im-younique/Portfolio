@@ -11,6 +11,8 @@ export default function GuestBook() {
   const [commentList, setCommentList] = useState<string[]>([]);
   const [comment, setComment] = useState<string>("");
 
+  const [enterTime, setEnterTime] = useState<number>(0);
+
   const inputRef = useRef(null);
 
   const handleInputChnage = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -18,7 +20,9 @@ export default function GuestBook() {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
+    const currentTime = new Date().getTime();
+    if (e.key === "Enter" && currentTime - enterTime > 300) {
+      setEnterTime(currentTime);
       handlePostComment();
     }
   };
