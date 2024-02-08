@@ -1,10 +1,6 @@
-import dynamic from "next/dynamic";
-
 // components
-import { Picture, MainFrame } from "@/components/main";
-const ThemeToggle = dynamic(() => import("@/components/main/ThemeToggle"), {
-  ssr: false,
-});
+import { Picture, MainFrame, SideSetting } from "@/components/main";
+
 import About from "@/components/about";
 import ProjectList from "@/components/project-list";
 import GuestBook from "@/components/guest-book";
@@ -16,10 +12,10 @@ export default function Home() {
   return (
     <>
       <Picture />
-      <ThemeToggle />
+      <SideSetting />
       <MainFrame.Container>
         <MainFrame.BoxLeftTop>
-          <span>안녕하세요 저는,</span>
+          <span>안녕하세요 저는</span>
           <h2>
             임 동 윤<span> 입니다.</span>
           </h2>

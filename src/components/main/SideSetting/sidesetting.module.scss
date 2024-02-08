@@ -1,0 +1,49 @@
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 120px;
+  background-color: white;
+  box-shadow: #ccc 0 0 2px;
+  z-index: 1111;
+}
+
+.tab {
+  border-radius: 0 4px 4px 0;
+  padding: 10px 16px 10px 14px;
+
+  & > :nth-child(1) {
+    animation: spin 1s linear infinite;
+    color: black;
+  }
+}
+
+.content {
+  display: relative;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  padding: 16px;
+  overflow: hidden;
+  text-align: center;
+
+  h4 {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .fixed {
+    display: none !important;
+  }
+}
