@@ -10,6 +10,9 @@ import RecoilRootProvider from "@/lib/recoil/recoilRootProvider";
 export const metadata: Metadata = {
   title: "임동윤 포트폴리오",
   description: "세상을 윤택하게 만드는 프론트엔드 개발자 임동윤입니다.",
+  openGraph: {
+    images: ["/myImages/profile_black.jpg", "/myImages/profile_white.jpg"],
+  },
 };
 
 export const ibm_sans = IBM_Plex_Sans_KR({
