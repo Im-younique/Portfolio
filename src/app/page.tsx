@@ -17,7 +17,7 @@ export default function Home() {
         <MainFrame.BoxLeftTop>
           <span>안녕하세요 저는</span>
           <h2>
-            임 동 윤<span> 입니다.</span>
+            임동윤<span> 입니다.</span>
           </h2>
           <span>Front-end Developer</span>
         </MainFrame.BoxLeftTop>
