@@ -7,6 +7,7 @@ const ThemeToggle = dynamic(() => import("@/components/main/ThemeToggle"), {
 });
 import About from "@/components/about";
 import ProjectList from "@/components/project-list";
+import GuestBook from "@/components/guest-book";
 
 // constants
 import { PROJECTLIST } from "@/constants";
@@ -45,7 +46,7 @@ export default function Home() {
         <MainFrame.Box boxName="guest book">
           <MainFrame.BoxTitle title="guest book" />
           <MainFrame.BoxContent title="guest book" icon_name="book">
-            <div>Temp</div>
+            <GuestBook />
           </MainFrame.BoxContent>
         </MainFrame.Box>
       </MainFrame.Container>
