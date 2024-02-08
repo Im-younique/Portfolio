@@ -54,6 +54,9 @@ export default function RootLayout({
     // 현재 다크모드라면 다크모드를 바로 적용 시켜줌
     if (currentColorMode === "dark")
       document.body.setAttribute("data-theme", "dark");
+
+    if (currentColorMode === "light")
+      document.body.setAttribute("data-theme", "light");
   }
 
   return (
