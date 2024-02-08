@@ -26,6 +26,7 @@ export default function RootLayout({
   // 초기 테마를 설정하는 함수
   function setInitialColorMode() {
     function getInitialColorMode() {
+      console.log("즉시 실행 테스트");
       // 로컬스토리지에서 'theme' 값 가져오기
       const persistedPreferenceMode = window.localStorage.getItem("theme");
       const hasPersistedPreference =
