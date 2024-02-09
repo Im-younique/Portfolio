@@ -27,9 +27,9 @@ export default function BoothStampDetail() {
           <Accordian title="Flutter">
             초기 iPAD용 어플리케이션 제작을 목표로 했지만 Swift를 사용하지
             못했기 때문에 크로스 웹앱 플랫폼인 Flutter를 선택했습니다. 교육도
-            진행했기 때문에 학습이 그나마 쉽다고 생각했고 앞으로 많이 사용될 수
-            있는 프레임워크라 선택하기도 했습니다. \n 최종적으로 앱 배포를 App
-            store 배포말고 웹을 선택했기 때문에 임기응변에 적합했습니다
+            진행해야 했기때문에 학습이 그나마 쉽고 앞으로 많이 사용될 수 있는
+            프레임워크라 선택하기도 했습니다. 최종적으로 앱 배포를 App store
+            배포말고 웹을 선택했기 때문에 임기응변에 적합했습니다
           </Accordian>
           <Accordian title="Dart">
             Flutter를 사용하기 위한 언어로 선택하였습니다.

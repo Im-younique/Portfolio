@@ -42,7 +42,7 @@ export default function CnmusicDetail() {
           </Accordian>
           <Accordian title="AWS">
             홍보용 홈페이지였기 때문에 웹상에 게시해야했고 처음으로 AWS를
-            사용하여 호스팅을 진행했습니다. pemkey관리 및 원격접소 및 정적
+            사용하여 호스팅을 진행했습니다. pemkey관리 및 원격접속 및 정적
             웹페이지 호스팅 방법을 배울 수 있었습니다
           </Accordian>
           <Accordian title="Firebase">
