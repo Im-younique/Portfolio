@@ -45,8 +45,8 @@
 
 .id_photo {
   justify-self: center;
-  width: calc(117px * 1.25);
-  height: calc(156px * 1.25);
+  width: calc(117px * 1.35);
+  height: calc(156px * 1.35);
   transition: all 0.1s linear;
 }
 
@@ -60,8 +60,8 @@
 
 @media (max-width: 1200px) {
   .id_photo {
-    width: 117px;
-    height: 156px;
+    width: calc(117px * 1.1);
+    height: calc(156px * 1.1);
   }
 
   .personal_subtitle {
@@ -86,6 +86,11 @@
 }
 
 @media (max-width: 480px) {
+  .id_photo {
+    width: 117px;
+    height: 156px;
+  }
+
   .information_box {
     ul {
       font-size: 14px;
