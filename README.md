@@ -1,40 +1,38 @@
 # Portfolio
 
-포트폴리오 리뉴얼
+2023/01 - 초기 포트폴리오 제작
+<br />
+2024/01 - 포트폴리오 리뉴얼
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a href="https://dongyoun-yim.vercel.app/" alt="홈페이지 링크">홈페이지 바로가기</a>
 
-## Getting Started
+<br />
 
-First, run the development server:
+## INDEX
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. [미리보기](#미리보기)
+2. [구버전 미리보기](#구버전-미리보기)
+3. [사용기술 및 참조](#사용기술-및-참조)
+   <br />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 미리보기
+![image](https://github.com/Im-younique/Portfolio/assets/48540492/75c209b4-e3d0-478f-9687-be09156884b5)
+![image](https://github.com/Im-younique/Portfolio/assets/48540492/7a72fe0a-0c81-44bf-87f2-310f3ba76f15)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br />
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 구버전 미리보기
+![image](https://github.com/Im-younique/Portfolio/assets/48540492/334c4600-55a4-4b2c-99a7-3bfebeb746de)
+![image](https://github.com/Im-younique/Portfolio/assets/48540492/4d68a95e-9f8d-4574-97e7-73dffdf4481a)
+![image](https://github.com/Im-younique/Portfolio/assets/48540492/a3b8b403-37ac-4e24-8976-b0ec5b8af9de)
+<br />
 
-## Learn More
+## 사용기술 및 참조
 
-To learn more about Next.js, take a look at the following resources:
+| NextJS                   | React                    | SCSS                     | Vercel                   | Postgre                  |
+| ------------------------ | ------------------------ | ------------------------ | ------------------------ | ------------------------ |
+| ![image](https://github.com/Im-younique/Portfolio/assets/48540492/3a936e8b-1616-44e2-bde4-d894213a70dc)| ![image](https://github.com/Im-younique/Portfolio/assets/48540492/ac4b6db8-bca9-47e2-8465-f73f52249d55)| ![image](https://github.com/Im-younique/Portfolio/assets/48540492/2d3ccc4c-e38a-46c6-9276-47729c74fbaa)| ![image](https://github.com/Im-younique/Portfolio/assets/48540492/d4c623df-7e1c-48d9-914c-f0dd4fda2d21)| ![image](https://github.com/Im-younique/Portfolio/assets/48540492/e8b3db2c-91ba-4c6b-9a02-e7008ff02b7c)|
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 포스팅
+  - [next14버전 세팅하기](https://www.reduck.site/board/6dbb9be3-50a9-4502-9ecc-ff10cb4451dd)
+  - [next와 scss로 다크모드 설정](https://www.reduck.site/board/7d19dce3-df32-4be3-8129-33bfad8e52b3)
