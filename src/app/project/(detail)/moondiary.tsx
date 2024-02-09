@@ -24,7 +24,7 @@ export default function MoonDiaryDetail() {
         <h2>사용기술</h2>
         <Accordian.Group>
           <Accordian title="ReactNative">
-            온라인 강의로 배운 리액트를 활용해 보기위해 React를 선택했고 모바일
+            온라인 강의로 배운 React를 활용해 보기위해 React를 선택했고 모바일
             어플리케이션 개발을 위해 ReactNative를 선택했습니다.
           </Accordian>
           <Accordian title="Expo">
@@ -36,11 +36,11 @@ export default function MoonDiaryDetail() {
             React를 사용하기 위해 JavaScript를 사용했습니다.
           </Accordian>
           <Accordian title="Oracle Cloud">
-            클라우드 서버를 운용하기 위해 찾다 AWS 1년 프리티어 기간이 지나 무료
-            클라우드 서비스를 찾다 Oracle Cloud를 발견했고 무료 사용기간 제한도
-            없어 선택했습니다. AI기능을 사용하기 위해서 프리티어 사양만으로는
-            부족해 On-promise로 클라우드 환경을 구축한 서버 피시를 같이
-            활용했습니다.
+            클라우드 서버를 운용하기 위해 AWS를 사용하려 했으나 1년 프리티어
+            기간이 지나 무료 클라우드 서비스를 찾다 Oracle Cloud를 발견했고 무료
+            사용기간 제한도 없어 선택했습니다. AI기능을 사용하기 위해서 프리티어
+            사양만으로는 부족해 On-promise로 클라우드 환경을 구축한 서버 피시를
+            같이 활용했습니다.
           </Accordian>
         </Accordian.Group>
       </div>

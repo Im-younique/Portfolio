@@ -42,6 +42,11 @@ export default function PortfolioDetail() {
           <Accordian title="Vercel">
             Next의 간편한 호스팅을 사용하기 위해 Vercel 호스팅을 사용했습니다.
           </Accordian>
+          <Accordian title="Postgre">
+            Vercel에서 storage를 무료로 제공하는 것을 발견하고 PostgreSQL을
+            이용하여 방명록을 구현하였고 별도로 다른 저장소를 사용하지 않아도
+            됐습니다.
+          </Accordian>
         </Accordian.Group>
       </div>
       <div className="detail-content-section">
