@@ -146,7 +146,7 @@ export default function Resume() {
                     제작
                   </li>
                   <li>
-                    <Link href={"https://www.weekip.co/"}>
+                    <Link href={"/project/weekip"}>
                       <RiLink size={12} /> weekip
                     </Link>
                   </li>
