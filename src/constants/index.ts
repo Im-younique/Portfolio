@@ -62,7 +62,7 @@ export const PROJECTINFO: { [key: string]: IProjectInfo } = Object.freeze({
   portfolio: {
     title: "임동윤 포트폴리오",
     startDate: "2024/01",
-    endDate: "(진행중)",
+    endDate: "2024/06",
   },
   cheerdo: {
     title: "너의 TODO를 응원해 - CheerDo",

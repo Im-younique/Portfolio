@@ -20,6 +20,7 @@ import {
   RiLink,
   RiAddBoxFill,
   RiCalendar2Fill,
+  RiIdCardFill,
 } from "@remixicon/react";
 
 export default function Resume() {
@@ -33,16 +34,19 @@ export default function Resume() {
     let categories: TResumeKind[] = [];
     switch (kind) {
       case "experience":
-        categories = ["experience", "etc", "skills", "education"];
+        categories = ["experience", "etc", "license", "skills", "education"];
         break;
       case "education":
-        categories = ["education", "experience", "etc", "skills"];
+        categories = ["education", "experience", "etc", "license", "skills"];
         break;
       case "skills":
-        categories = ["skills", "education", "experience", "etc"];
+        categories = ["skills", "education", "experience", "etc", "license"];
+        break;
+      case "license":
+        categories = ["license", "skills", "education", "experience", "etc"];
         break;
       case "etc":
-        categories = ["etc", "skills", "education", "experience"];
+        categories = ["etc", "license", "skills", "education", "experience"];
         break;
     }
     const selectedIndex = categories.indexOf(selected);
@@ -52,11 +56,16 @@ export default function Resume() {
       classes.second,
       classes.thrid,
       classes.forth,
+      classes.fifth,
     ].map(
       (_, index) =>
-        [classes.first, classes.second, classes.thrid, classes.forth][
-          (index + selectedIndex) % 4
-        ]
+        [
+          classes.first,
+          classes.second,
+          classes.thrid,
+          classes.forth,
+          classes.fifth,
+        ][(index + selectedIndex) % 5]
     );
 
     return resultOrder[0];
@@ -95,6 +104,15 @@ export default function Resume() {
           </div>
           <div
             className={`${classes.select_box} ${
+              selected === "license" && classes.box_active
+            }`}
+            onClick={() => handleSelect("license")}
+          >
+            <RiIdCardFill />
+            <span>license</span>
+          </div>
+          <div
+            className={`${classes.select_box} ${
               selected === "etc" && classes.box_active
             }`}
             onClick={() => handleSelect("etc")}
@@ -128,7 +146,7 @@ export default function Resume() {
                     제작
                   </li>
                   <li>
-                    <Link href={"https://www.weekip.co/"}>
+                    <Link href={"/project/weekip"}>
                       <RiLink size={12} /> weekip
                     </Link>
                   </li>
@@ -139,7 +157,7 @@ export default function Resume() {
               <div className={classes.resume_content}>
                 <h6>
                   <span>Front-end Developer -</span>{" "}
-                  <span>(주)와인원, 인턴</span>
+                  <span>(주)나라셀라, 인턴</span>
                 </h6>
                 <span className={classes.date}>
                   <RiCalendar2Fill size={15} /> 2022.08 ~ 2022.8
@@ -215,7 +233,6 @@ export default function Resume() {
                   <Stars scores={4} />
                   <h6>Svelte</h6>
                   <Stars scores={2.5} />
-                  <p>SQL 개발자 자격증 (22.06.04)</p>
                 </div>
                 <div className={classes.col_half}>
                   <h6>Python</h6>
@@ -228,7 +245,6 @@ export default function Resume() {
                   <Stars scores={3} />
                   <h6>AWS(NCloud)</h6>
                   <Stars scores={3} />
-                  <p>TOPCIT_level_3 (23.05.20)</p>
                 </div>
               </div>
             </div>
@@ -236,6 +252,48 @@ export default function Resume() {
           <div
             className={`${classes.resume_card} ${
               classes.card_3
+            } ${makeOrderStyle("license")}`}
+            onClick={() => handleSelect("license")}
+          >
+            <div className={classes.resume_card_title}>
+              <RiIdCardFill />
+              <span>license</span>
+            </div>
+            <div className={classes.resume_card_content}>
+              <div className={classes.resume_content}>
+                <h6>
+                  <span>정보처리기사 자격증</span>
+                </h6>
+                <span className={classes.date}>
+                  <RiCalendar2Fill size={15} /> 2024.06.18
+                </span>
+                <p>비고 : 국가기술자격증 _ 발급처 : 과학기술정보통신부</p>
+              </div>
+              <span className={classes.color_seperator} />
+              <div className={classes.resume_content}>
+                <h6>
+                  <span>TOPCIT_level_3</span>
+                </h6>
+                <span className={classes.date}>
+                  <RiCalendar2Fill size={15} /> 2023.05.20
+                </span>
+                <p>비고 : 상위 10% 성적 _ 발급처 : 정보통신기획평가원</p>
+              </div>
+              <span className={classes.color_seperator} />
+              <div className={classes.resume_content}>
+                <h6>
+                  <span>SQL 개발자 자격증</span>
+                </h6>
+                <span className={classes.date}>
+                  <RiCalendar2Fill size={15} /> 2022.06.04
+                </span>
+                <p>발급처 : 한국데이터산업진흥원 </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${classes.resume_card} ${
+              classes.card_4
             } ${makeOrderStyle("etc")}`}
             onClick={() => handleSelect("etc")}
           >

@@ -80,7 +80,10 @@ export default function WeekipDetail() {
       </div>
       <div className="detail-content-section">
         <h2>관련링크</h2>
-        <LinkText href="https://www.weekip.co" text="weekip 페이지 바로가기" />
+        <LinkText
+          href="https://www.weekip.co"
+          text="weekip 페이지 바로가기 (deprecated)"
+        />
         <LinkText
           href="https://www.npmjs.com/package/tiptap-extension-resize-image"
           text="npm 오픈소스, Tiptap Image Resize"

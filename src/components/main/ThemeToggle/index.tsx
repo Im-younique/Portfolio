@@ -9,7 +9,13 @@ import classes from "./themetoggle.module.scss";
 import { RiSunFill, RiMoonFill } from "@remixicon/react";
 
 const ThemeToggle = () => {
-  const [darkTheme, setDarkTheme] = useState<boolean | undefined>(undefined);
+  const [darkTheme, setDarkTheme] = useState<boolean | undefined>(
+    window === undefined
+      ? undefined
+      : window.localStorage.getItem("theme") === "dark"
+      ? true
+      : false
+  );
 
   const handleToggle = () => {
     setDarkTheme(!darkTheme);
@@ -24,17 +30,15 @@ const ThemeToggle = () => {
         document.body.setAttribute("data-theme", "light");
         window.localStorage.setItem("theme", "light");
       }
+    } else {
+      const root = window.document.body;
+      const initialColorValue = root.style.getPropertyValue(
+        "--initial-color-mode"
+      );
+
+      setDarkTheme(initialColorValue === "dark");
     }
   }, [darkTheme]);
-
-  useEffect(() => {
-    const root = window.document.body;
-    const initialColorValue = root.style.getPropertyValue(
-      "--initial-color-mode"
-    );
-
-    setDarkTheme(initialColorValue === "dark");
-  }, []);
 
   return (
     <label className={classes.container}>
