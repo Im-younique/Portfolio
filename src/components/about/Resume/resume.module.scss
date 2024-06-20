@@ -165,7 +165,8 @@
 
   .card_1,
   .card_2,
-  .card_3 {
+  .card_3,
+  .card_4 {
     position: absolute;
     left: 0;
     top: 0;
@@ -175,12 +176,12 @@
   // 카드 애니매이션
   .first {
     transform: scale(1) translate(0, 0);
-    z-index: 3;
+    z-index: 4;
   }
 
   .second,
   .thrid,
-  .forth {
+  .forth .fifth {
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
   }
@@ -194,19 +195,27 @@
   .forth:hover {
     transform: scale(0.7) translate(0, -190px);
   }
+  .fifth:hover {
+    transform: scale(0.6) translate(0, -270px);
+  }
 
   .second {
     transform: scale(0.9) translate(0, -50px);
-    z-index: 2;
+    z-index: 3;
   }
 
   .thrid {
     transform: scale(0.8) translate(0, -110px);
-    z-index: 1;
+    z-index: 2;
   }
 
   .forth {
     transform: scale(0.7) translate(0, -180px);
+    z-index: 1;
+  }
+
+  .fifth {
+    transform: scale(0.6) translate(0, -260px);
     z-index: 0;
   }
 }
