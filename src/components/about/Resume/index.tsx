@@ -157,7 +157,7 @@ export default function Resume() {
               <div className={classes.resume_content}>
                 <h6>
                   <span>Front-end Developer -</span>{" "}
-                  <span>(주)와인원, 인턴</span>
+                  <span>(주)나라셀라, 인턴</span>
                 </h6>
                 <span className={classes.date}>
                   <RiCalendar2Fill size={15} /> 2022.08 ~ 2022.8

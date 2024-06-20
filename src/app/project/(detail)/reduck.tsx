@@ -16,7 +16,7 @@ export default function ReduckDetail() {
             SSR을 활용하여 사용자 토큰 유지 및 사용자 인증 구현
           </ListBlockquote.Text>
           <ListBlockquote.Text>
-            Socket.io, Stomp를 이용하여 웹 채팅 구현
+            SockJS, Stomp를 이용하여 웹 채팅 구현
           </ListBlockquote.Text>
           <ListBlockquote.Text>유저 팔로잉 기능 개발</ListBlockquote.Text>
           <ListBlockquote.Text>
