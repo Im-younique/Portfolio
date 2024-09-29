@@ -60,7 +60,7 @@ export default function Personal() {
           <li>
             <RiMapPin2Line size={18} />
             <span> 주소: </span>
-            <span>충청남도 천안시</span>
+            <span>서울특별시 송파구</span>
           </li>
         </ul>
       </div>

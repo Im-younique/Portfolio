@@ -135,6 +135,18 @@ export default function Resume() {
             <div className={classes.resume_card_content}>
               <div className={classes.resume_content}>
                 <h6>
+                  <span>Web Engineer -</span> <span>지란지교소프트, 사원</span>
+                </h6>
+                <span className={classes.date}>
+                  <RiCalendar2Fill size={15} /> 2024.07 ~ (재직중)
+                </span>
+                <ul>
+                  <li>OfficeKeeper 관리자 웹사이트 개발 및 운영</li>
+                </ul>
+              </div>
+              <span className={classes.color_seperator} />
+              <div className={classes.resume_content}>
+                <h6>
                   <span>S/W Engineer -</span> <span>(주)에디슨랩, 인턴</span>
                 </h6>
                 <span className={classes.date}>
@@ -144,11 +156,6 @@ export default function Resume() {
                   <li>
                     세상의 흐름을 읽는 IP:Weekip 서비스 페이지, 관리자 페이지
                     제작
-                  </li>
-                  <li>
-                    <Link href={"/project/weekip"}>
-                      <RiLink size={12} /> weekip
-                    </Link>
                   </li>
                   <li>자율주행캠프, IP:PBL 캠프 운영</li>
                 </ul>
@@ -182,19 +189,6 @@ export default function Resume() {
             <div className={classes.resume_card_content}>
               <div className={classes.resume_content}>
                 <h6>
-                  <span>천안중앙고등학교</span>
-                </h6>
-                <span className={classes.date}>
-                  <RiCalendar2Fill size={15} /> 2015.03 ~ 2018.02
-                </span>
-                <ul>
-                  <li>과학중점과정 이수</li>
-                  <li>한일공동수업 참여</li>
-                </ul>
-              </div>
-              <span className={classes.color_seperator} />
-              <div className={classes.resume_content}>
-                <h6>
                   <span>충남대학교 -</span> <span>컴퓨터공학과 학사</span>
                 </h6>
                 <span className={classes.date}>
@@ -206,6 +200,19 @@ export default function Resume() {
                     정보보호동아리 ARGOS - 2023년도 부회장, 2022년도 기획부장
                   </li>
                   <li>2022 컴퓨터융합학부 학생회 MEMORY - 기획부장</li>
+                </ul>
+              </div>
+              <span className={classes.color_seperator} />
+              <div className={classes.resume_content}>
+                <h6>
+                  <span>천안중앙고등학교</span>
+                </h6>
+                <span className={classes.date}>
+                  <RiCalendar2Fill size={15} /> 2015.03 ~ 2018.02
+                </span>
+                <ul>
+                  <li>과학중점과정 이수</li>
+                  <li>한일공동수업 참여</li>
                 </ul>
               </div>
             </div>
