@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
 // components
 import Stars from "./Stars";
@@ -17,7 +16,6 @@ import {
   RiBriefcaseFill,
   RiGraduationCapFill,
   RiStarFill,
-  RiLink,
   RiAddBoxFill,
   RiCalendar2Fill,
   RiIdCardFill,
@@ -122,10 +120,11 @@ export default function Resume() {
           </div>
         </div>
         <div className={`content-container ${classes.resume_card_wrapper}`}>
+          <div className={classes.resume_card_base}></div>
           <div
-            className={`${classes.resume_card} ${
-              classes.card_0
-            } ${makeOrderStyle("experience")}`}
+            className={`${classes.resume_card} ${classes.card} ${makeOrderStyle(
+              "experience"
+            )}`}
             onClick={() => handleSelect("experience")}
           >
             <div className={classes.resume_card_title}>
@@ -177,9 +176,9 @@ export default function Resume() {
             </div>
           </div>
           <div
-            className={`${classes.resume_card} ${
-              classes.card_1
-            } ${makeOrderStyle("education")}`}
+            className={`${classes.resume_card} ${classes.card} ${makeOrderStyle(
+              "education"
+            )}`}
             onClick={() => handleSelect("education")}
           >
             <div className={classes.resume_card_title}>
@@ -218,9 +217,9 @@ export default function Resume() {
             </div>
           </div>
           <div
-            className={`${classes.resume_card} ${
-              classes.card_2
-            } ${makeOrderStyle("skills")}`}
+            className={`${classes.resume_card} ${classes.card} ${makeOrderStyle(
+              "skills"
+            )}`}
             onClick={() => handleSelect("skills")}
           >
             <div className={classes.resume_card_title}>
@@ -257,9 +256,9 @@ export default function Resume() {
             </div>
           </div>
           <div
-            className={`${classes.resume_card} ${
-              classes.card_3
-            } ${makeOrderStyle("license")}`}
+            className={`${classes.resume_card} ${classes.card} ${makeOrderStyle(
+              "license"
+            )}`}
             onClick={() => handleSelect("license")}
           >
             <div className={classes.resume_card_title}>
@@ -299,9 +298,9 @@ export default function Resume() {
             </div>
           </div>
           <div
-            className={`${classes.resume_card} ${
-              classes.card_4
-            } ${makeOrderStyle("etc")}`}
+            className={`${classes.resume_card} ${classes.card} ${makeOrderStyle(
+              "etc"
+            )}`}
             onClick={() => handleSelect("etc")}
           >
             <div className={classes.resume_card_title}>

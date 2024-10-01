@@ -55,6 +55,13 @@
   transition: 0.3s ease transform;
 }
 
+.resume_card_base {
+  position: relative;
+  max-width: 645px;
+  min-height: 80vh;
+  opacity: 0;
+}
+
 .resume_card_title {
   display: flex;
   gap: 0.5rem;
@@ -151,7 +158,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 799px) {
   .select_wrapper {
     display: none;
   }
@@ -160,24 +167,21 @@
     margin-bottom: 24px;
   }
 
+  .resume_card_base {
+    display: none;
+  }
+
   .resume_card_content {
     min-height: unset;
   }
 }
 
 @media (min-width: 800px) {
-  .card_0 {
-    position: relative;
-  }
-
-  .card_1,
-  .card_2,
-  .card_3,
-  .card_4 {
+  .card {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 97%;
   }
 
   // 카드 애니매이션
@@ -203,7 +207,7 @@
     transform: scale(0.7) translate(0, -190px);
   }
   .fifth:hover {
-    transform: scale(0.6) translate(0, -270px);
+    transform: scale(0.6) translate(0, -280px);
   }
 
   .second {
@@ -222,8 +226,12 @@
   }
 
   .fifth {
-    transform: scale(0.6) translate(0, -260px);
+    transform: scale(0.6) translate(0, -273px);
     z-index: 0;
+  }
+
+  .resume_card_wrapper {
+    margin-left: 24px;
   }
 }
 
