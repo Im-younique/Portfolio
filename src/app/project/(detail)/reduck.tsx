@@ -63,7 +63,10 @@ export default function ReduckDetail() {
       </div>
       <div className="detail-content-section">
         <h2>관련링크</h2>
-        <LinkText href="https://reduck.site" text="reduck 페이지 바로가기" />
+        <LinkText
+          href="https://reduck.site"
+          text="reduck 페이지 바로가기 (server down)"
+        />
         <LinkText
           href="https://www.npmjs.com/package/tiptap-extension-resize-image"
           text="npm 오픈소스, Tiptap Image Resize"
