@@ -1,7 +1,7 @@
 .resume_container {
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
-  padding: 50px 0;
+  padding: 120px 0;
 }
 
 .resume_wrapper {
@@ -44,7 +44,7 @@
 .resume_card_wrapper {
   position: relative;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: -20px;
   max-width: 645px;
   height: 100%;
 }
@@ -53,13 +53,6 @@
   box-shadow: none;
   border: 1px solid var(--color-border);
   transition: 0.3s ease transform;
-}
-
-.resume_card_base {
-  position: relative;
-  max-width: 645px;
-  min-height: 80vh;
-  opacity: 0;
 }
 
 .resume_card_title {
@@ -159,6 +152,10 @@
 }
 
 @media (max-width: 799px) {
+  .resume_container {
+    padding: 60px 0;
+  }
+
   .select_wrapper {
     display: none;
   }
@@ -231,6 +228,7 @@
   }
 
   .resume_card_wrapper {
+    align-self: flex-start;
     margin-left: 24px;
   }
 }

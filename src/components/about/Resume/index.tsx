@@ -120,7 +120,6 @@ export default function Resume() {
           </div>
         </div>
         <div className={`content-container ${classes.resume_card_wrapper}`}>
-          <div className={classes.resume_card_base}></div>
           <div
             className={`${classes.resume_card} ${classes.card} ${makeOrderStyle(
               "experience"
