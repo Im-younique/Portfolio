@@ -83,6 +83,7 @@ export default function WeekipDetail() {
         <LinkText
           href="https://www.weekip.co"
           text="weekip 페이지 바로가기 (deprecated)"
+          disabled
         />
         <LinkText
           href="https://www.npmjs.com/package/tiptap-extension-resize-image"

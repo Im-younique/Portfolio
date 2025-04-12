@@ -50,6 +50,7 @@ export default function CultureDetail() {
         <LinkText
           href="https://culture.argos.or.kr/index.html"
           text="홈페이지 바로가기 (계약만료)"
+          disabled
         />
         <LinkText
           href="https://github.com/4RG0S/2021-web-creation-volunteer"
