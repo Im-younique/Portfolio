@@ -140,6 +140,7 @@ export default function Resume() {
                 </span>
                 <ul>
                   <li>OfficeKeeper 관리자 웹사이트 개발 및 운영</li>
+                  <li>프론트엔드 공통 컴포넌트 모듈 개발</li>
                 </ul>
               </div>
               <span className={classes.color_seperator} />
@@ -235,8 +236,12 @@ export default function Resume() {
                   <h6>JavaScript (TypeScript)</h6>
                   <Stars scores={4.5} />
                   <h6>React (Next)</h6>
-                  <Stars scores={4} />
+                  <Stars scores={4.5} />
+                  <h6>Vue</h6>
+                  <Stars scores={2.5} />
                   <h6>Svelte</h6>
+                  <Stars scores={2.5} />
+                  <h6>Storybook</h6>
                   <Stars scores={2.5} />
                 </div>
                 <div className={classes.col_half}>
@@ -250,6 +255,10 @@ export default function Resume() {
                   <Stars scores={3} />
                   <h6>AWS(NCloud)</h6>
                   <Stars scores={3} />
+                  <h6>Docker</h6>
+                  <Stars scores={3} />
+                  <h6>rust</h6>
+                  <Stars scores={2} />
                 </div>
               </div>
             </div>
@@ -267,7 +276,7 @@ export default function Resume() {
             <div className={classes.resume_card_content}>
               <div className={classes.resume_content}>
                 <h6>
-                  <span>정보처리기사 자격증</span>
+                  <span>정보처리기사</span>
                 </h6>
                 <span className={classes.date}>
                   <RiCalendar2Fill size={15} /> 2024.06.18
@@ -287,7 +296,7 @@ export default function Resume() {
               <span className={classes.color_seperator} />
               <div className={classes.resume_content}>
                 <h6>
-                  <span>SQL 개발자 자격증</span>
+                  <span>SQLD 개발자</span>
                 </h6>
                 <span className={classes.date}>
                   <RiCalendar2Fill size={15} /> 2022.06.04
