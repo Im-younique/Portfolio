@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import "@/styles/global.scss";
 import { IBM_Plex_Sans_KR } from "next/font/google";
 
-// recoil
-import RecoilRootProvider from "@/lib/recoil/recoilRootProvider";
+// context
+import { MainExpandProvider } from "@/lib/context/MainExpandContext";
 
 export const metadata: Metadata = {
   title: "임동윤 포트폴리오",
@@ -78,9 +78,9 @@ export default function RootLayout({
             __html: themeInitializerScript,
           }}
         />
-        <RecoilRootProvider>
+        <MainExpandProvider>
           <main className="wrapper">{children}</main>
-        </RecoilRootProvider>
+        </MainExpandProvider>
       </body>
     </html>
   );

@@ -1,8 +1,7 @@
 "use client";
 
-// recoil
-import { useRecoilState } from "recoil";
-import { mainState } from "@/lib/recoil/atoms/mainState";
+// context
+import { useMainExpand } from "@/lib/context/MainExpandContext";
 
 // components
 import DividerWithIcon from "@/components/base/DividerWithIcon";
@@ -23,18 +22,18 @@ interface IProp {
 }
 
 const BoxContent = ({ title, icon_name, children }: IProp) => {
-  const [expanded, setExpanded] = useRecoilState(mainState);
+  const { activeSection, setActiveSection } = useMainExpand();
 
   const handleClose = (e: React.MouseEvent) => {
     e.stopPropagation();
-    setExpanded("none");
+    setActiveSection("none");
   };
 
   const [fristTitle, lastTitle] = title.split(" ");
   return (
     <>
       <div
-        className={`${classes.content} ${title === expanded && classes.view}`}
+        className={`${classes.content} ${title === activeSection && classes.view}`}
       >
         <div className={classes.pageTitle}>
           <h2 className={classes.titleText}>
@@ -49,7 +48,7 @@ const BoxContent = ({ title, icon_name, children }: IProp) => {
         size={60}
         color="#ababab"
         className={`${classes.close_icon} ${
-          title === expanded && classes.view
+          title === activeSection && classes.view
         }`}
         onClick={(e) => handleClose(e)}
       />

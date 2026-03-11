@@ -1,8 +1,7 @@
 "use client";
 
-// recoil
-import { useRecoilValue } from "recoil";
-import { mainState } from "@/lib/recoil/atoms/mainState";
+// context
+import { useMainExpand } from "@/lib/context/MainExpandContext";
 
 // styles
 import classes from "./boxlefttop.module.scss";
@@ -12,10 +11,10 @@ interface IProps {
 }
 
 const BoxLeftTop = ({ children }: IProps) => {
-  const mains = useRecoilValue(mainState);
+  const { activeSection } = useMainExpand();
 
   return (
-    <section className={`${mains !== "none" && classes.shrink}`}>
+    <section className={`${activeSection !== "none" && classes.shrink}`}>
       <div className={classes.box}>
         <div className={classes.title}>{children}</div>
       </div>
