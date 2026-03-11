@@ -11,6 +11,9 @@ import classes from "./resume.module.scss";
 // types
 import { TResumeKind } from "@/types";
 
+// constants
+import { WORK_EXPERIENCES } from "@/constants";
+
 // icon
 import {
   RiBriefcaseFill,
@@ -131,48 +134,27 @@ export default function Resume() {
               <span>experience</span>
             </div>
             <div className={classes.resume_card_content}>
-              <div className={classes.resume_content}>
-                <h6>
-                  <span>Web Engineer -</span> <span>지란지교소프트, 사원</span>
-                </h6>
-                <span className={classes.date}>
-                  <RiCalendar2Fill size={15} /> 2024.07 ~ (재직중)
-                </span>
-                <ul>
-                  <li>OfficeKeeper 관리자 웹사이트 개발 및 운영</li>
-                  <li>프론트엔드 공통 컴포넌트 모듈 개발</li>
-                </ul>
-              </div>
-              <span className={classes.color_seperator} />
-              <div className={classes.resume_content}>
-                <h6>
-                  <span>S/W Engineer -</span> <span>(주)에디슨랩, 인턴</span>
-                </h6>
-                <span className={classes.date}>
-                  <RiCalendar2Fill size={15} /> 2023.07 ~ 2023.12
-                </span>
-                <ul>
-                  <li>
-                    세상의 흐름을 읽는 IP:Weekip 서비스 페이지, 관리자 페이지
-                    제작
-                  </li>
-                  <li>자율주행캠프, IP:PBL 캠프 운영</li>
-                </ul>
-              </div>
-              <span className={classes.color_seperator} />
-              <div className={classes.resume_content}>
-                <h6>
-                  <span>Front-end Developer -</span>{" "}
-                  <span>(주)나라셀라, 인턴</span>
-                </h6>
-                <span className={classes.date}>
-                  <RiCalendar2Fill size={15} /> 2022.08 ~ 2022.8
-                </span>
-                <ul>
-                  <li>1kmwine 앱, 베타 테스트 참여 및 버그 리포팅</li>
-                  <li>1kmwine 사장님 앱 프로토 타입 개발</li>
-                </ul>
-              </div>
+              {WORK_EXPERIENCES.map((exp, index) => (
+                <div key={exp.company}>
+                  {index > 0 && (
+                    <span className={classes.color_seperator} />
+                  )}
+                  <div className={classes.resume_content}>
+                    <h6>
+                      <span>{exp.role.split(",")[0]} -</span>{" "}
+                      <span>{exp.company}{exp.role.includes(",") ? `, ${exp.role.split(",")[1].trim()}` : ""}</span>
+                    </h6>
+                    <span className={classes.date}>
+                      <RiCalendar2Fill size={15} /> {exp.period}
+                    </span>
+                    <ul>
+                      {exp.achievements.map((achievement) => (
+                        <li key={achievement}>{achievement}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <div
