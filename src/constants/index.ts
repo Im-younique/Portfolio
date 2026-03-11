@@ -2,6 +2,11 @@ import { IProjectInfo, IProjectList, IWorkExperience } from "@/types";
 
 export const PROJECTLIST: IProjectList[] = [
   {
+    name: "OfficeKeeper",
+    href: "project/officekeeper",
+    src: "/thumbnail/officekeeper.png",
+  },
+  {
     name: "위킵 Weekip",
     href: "project/weekip",
     src: "/thumbnail/weekip.png",
@@ -41,11 +46,6 @@ export const PROJECTLIST: IProjectList[] = [
     href: "project/culture",
     src: "/thumbnail/culture.png",
   },
-  {
-    name: "충남뮤직페스타",
-    href: "project/cnmusicfesta",
-    src: "/thumbnail/cnmusic.png",
-  },
 ];
 
 export const WORK_EXPERIENCES: IWorkExperience[] = [
@@ -72,7 +72,7 @@ export const WORK_EXPERIENCES: IWorkExperience[] = [
   {
     company: "(주)나라셀라",
     role: "Front-end Developer, 인턴",
-    period: "2022.08 ~ 2022.08",
+    period: "2022.08 (1개월)",
     achievements: [
       "1kmwine 앱, 베타 테스트 참여 및 버그 리포팅",
       "1kmwine 사장님 앱 프로토 타입 개발",
@@ -89,7 +89,7 @@ export const PROJECTINFO: { [key: string]: IProjectInfo } = Object.freeze({
   reduck: {
     title: "개발자를 위한 커뮤니티 및 멘토링 시스템 - reDuck",
     startDate: "2023/02",
-    endDate: "(진행중)",
+    endDate: "2024/05",
   },
   portfolio: {
     title: "임동윤 포트폴리오",
@@ -121,9 +121,9 @@ export const PROJECTINFO: { [key: string]: IProjectInfo } = Object.freeze({
     startDate: "2022/09",
     endDate: "2022/11",
   },
-  cnmusicfesta: {
-    title: "충남 전역에서 펼쳐지는 정열의 음악 축제! - 충남뮤직페스타",
-    startDate: "2021/09",
-    endDate: "2021/12",
+  officekeeper: {
+    title: "기업 보안 솔루션 - OfficeKeeper 관리자 웹사이트",
+    startDate: "2024/07",
+    endDate: "(진행중)",
   },
 });

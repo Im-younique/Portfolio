@@ -211,36 +211,36 @@ export default function Resume() {
             <div className={classes.resume_card_content}>
               <div className={classes.col_wrapper}>
                 <div className={classes.col_half}>
+                  <h6>JavaScript (TypeScript)</h6>
+                  <Stars scores={4.5} />
+                  <h6>React (Next.js)</h6>
+                  <Stars scores={4.5} />
                   <h6>HTML</h6>
                   <Stars scores={4.5} />
                   <h6>CSS (SCSS)</h6>
                   <Stars scores={4} />
-                  <h6>JavaScript (TypeScript)</h6>
-                  <Stars scores={4.5} />
-                  <h6>React (Next)</h6>
-                  <Stars scores={4.5} />
-                  <h6>Vue</h6>
-                  <Stars scores={2.5} />
-                  <h6>Svelte</h6>
-                  <Stars scores={2.5} />
-                  <h6>Storybook</h6>
-                  <Stars scores={2.5} />
+                  <h6>Python (FastAPI)</h6>
+                  <Stars scores={4} />
+                  <h6>Git (GitLab)</h6>
+                  <Stars scores={4} />
+                  <h6>Playwright</h6>
+                  <Stars scores={3.5} />
                 </div>
                 <div className={classes.col_half}>
-                  <h6>Python</h6>
+                  <h6>PHP/Laravel/CI</h6>
                   <Stars scores={3.5} />
-                  <h6>Flutter (Dart)</h6>
-                  <Stars scores={3} />
                   <h6>Firebase</h6>
                   <Stars scores={4} />
                   <h6>SQL</h6>
-                  <Stars scores={3} />
-                  <h6>AWS(NCloud)</h6>
-                  <Stars scores={3} />
+                  <Stars scores={3.5} />
                   <h6>Docker</h6>
                   <Stars scores={3} />
-                  <h6>rust</h6>
-                  <Stars scores={2} />
+                  <h6>Rust</h6>
+                  <Stars scores={3} />
+                  <h6>Langchain</h6>
+                  <Stars scores={3} />
+                  <h6>AWS</h6>
+                  <Stars scores={3} />
                 </div>
               </div>
             </div>
