@@ -8,12 +8,12 @@ import BoothStampDetail from "../(detail)/boothstamp";
 import CultureDetail from "../(detail)/culture";
 import CnmusicDetail from "../(detail)/cnmusic";
 
-export default function ProjectPage({
+export default async function ProjectPage({
   params,
 }: {
-  params: { projectName: string };
+  params: Promise<{ projectName: string }>;
 }) {
-  const { projectName } = params;
+  const { projectName } = await params;
 
   switch (projectName) {
     case "weekip":
