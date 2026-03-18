@@ -1,8 +1,7 @@
 "use client";
 
-// recoil
-import { useRecoilValue } from "recoil";
-import { mainState } from "@/lib/recoil/atoms/mainState";
+// context
+import { useMainExpand } from "@/lib/context/MainExpandContext";
 
 // styles
 import classes from "./title.module.scss";
@@ -15,14 +14,14 @@ interface IProp {
 }
 
 const BoxTitle = ({ title }: IProp) => {
-  const mains = useRecoilValue(mainState);
+  const { activeSection } = useMainExpand();
 
   const [fristTitle, lastTitle] = title.split(" ");
 
   return (
     <div
       className={`${classes.title_wrapper} ${
-        mains === title && classes.hidden
+        activeSection === title && classes.hidden
       }`}
     >
       <h2 className={classes.title_style}>

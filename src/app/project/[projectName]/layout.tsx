@@ -3,14 +3,14 @@ import { PROJECTINFO } from "@/constants";
 // icon
 import { RiCalendar2Fill } from "@remixicon/react";
 
-export default function ProjectLayout({
+export default async function ProjectLayout({
   params,
   children,
 }: {
-  params: { projectName: string };
+  params: Promise<{ projectName: string }>;
   children: React.ReactNode;
 }) {
-  const { projectName } = params;
+  const { projectName } = await params;
   return (
     <div className="detail-wrapper">
       <header className="detail-header">

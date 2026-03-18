@@ -17,6 +17,12 @@ export default function PortfolioDetail() {
             Next version 14 업데이트로 인한 개발환경 세팅
           </ListBlockquote.Text>
           <ListBlockquote.Text>다크/화이트모드 구현</ListBlockquote.Text>
+          <ListBlockquote.Text>
+            Next.js 14 → 16, React 18 → 19 업그레이드
+          </ListBlockquote.Text>
+          <ListBlockquote.Text>
+            Recoil → React Context 상태관리 전환
+          </ListBlockquote.Text>
         </ListBlockquote.Container>
       </div>
       <div className="detail-content-section">

@@ -1,31 +1,30 @@
 {
   "name": "portfolio",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint src/"
   },
   "engines": {
     "node": "22.x"
   },
   "dependencies": {
-    "@remixicon/react": "^4.2.0",
-    "@vercel/postgres": "^0.7.2",
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "recoil": "^0.7.7",
-    "sass": "^1.69.7"
+    "@remixicon/react": "^4.9.0",
+    "@vercel/postgres": "^0.10.0",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "sass": "^1.98.0"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.1.6",
     "typescript": "^5"
   }
 }

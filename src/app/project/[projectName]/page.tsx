@@ -1,3 +1,4 @@
+import OfficekeeperDetail from "../(detail)/officekeeper";
 import WeekipDetail from "../(detail)/weekip";
 import ReduckDetail from "../(detail)/reduck";
 import PortfolioDetail from "../(detail)/portfolio";
@@ -6,16 +7,17 @@ import OneKmwineDetail from "../(detail)/1kmwine";
 import MoonDiaryDetail from "../(detail)/moondiary";
 import BoothStampDetail from "../(detail)/boothstamp";
 import CultureDetail from "../(detail)/culture";
-import CnmusicDetail from "../(detail)/cnmusic";
 
-export default function ProjectPage({
+export default async function ProjectPage({
   params,
 }: {
-  params: { projectName: string };
+  params: Promise<{ projectName: string }>;
 }) {
-  const { projectName } = params;
+  const { projectName } = await params;
 
   switch (projectName) {
+    case "officekeeper":
+      return <OfficekeeperDetail />;
     case "weekip":
       return <WeekipDetail />;
     case "reduck":
@@ -32,7 +34,5 @@ export default function ProjectPage({
       return <BoothStampDetail />;
     case "culture":
       return <CultureDetail />;
-    case "cnmusicfesta":
-      return <CnmusicDetail />;
   }
 }

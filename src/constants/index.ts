@@ -1,6 +1,11 @@
-import { IProjectInfo, IProjectList } from "@/types";
+import { IProjectInfo, IProjectList, IWorkExperience } from "@/types";
 
 export const PROJECTLIST: IProjectList[] = [
+  {
+    name: "OfficeKeeper",
+    href: "project/officekeeper",
+    src: "/thumbnail/officekeeper.png",
+  },
   {
     name: "위킵 Weekip",
     href: "project/weekip",
@@ -41,10 +46,37 @@ export const PROJECTLIST: IProjectList[] = [
     href: "project/culture",
     src: "/thumbnail/culture.png",
   },
+];
+
+export const WORK_EXPERIENCES: IWorkExperience[] = [
   {
-    name: "충남뮤직페스타",
-    href: "project/cnmusicfesta",
-    src: "/thumbnail/cnmusic.png",
+    company: "지란지교소프트",
+    role: "Web Engineer, 사원",
+    period: "2024.07 ~ (재직중)",
+    achievements: [
+      "OKEP 관리자 웹사이트 프론트엔드 개발",
+      "OfficeKeeper 운영개발파트 소속, 제품 운영 개발",
+      "OfficeKeeper AI 기능 개발",
+      "크로스팀 코드리뷰 문화 기획 및 정착",
+    ],
+  },
+  {
+    company: "(주)에디슨랩",
+    role: "S/W Engineer, 인턴",
+    period: "2023.07 ~ 2023.12",
+    achievements: [
+      "세상의 흐름을 읽는 IP:Weekip 서비스 페이지, 관리자 페이지 제작",
+      "자율주행캠프, IP:PBL 캠프 운영",
+    ],
+  },
+  {
+    company: "(주)나라셀라",
+    role: "Front-end Developer, 인턴",
+    period: "2022.08 (1개월)",
+    achievements: [
+      "1kmwine 앱, 베타 테스트 참여 및 버그 리포팅",
+      "1kmwine 사장님 앱 프로토 타입 개발",
+    ],
   },
 ];
 
@@ -57,7 +89,7 @@ export const PROJECTINFO: { [key: string]: IProjectInfo } = Object.freeze({
   reduck: {
     title: "개발자를 위한 커뮤니티 및 멘토링 시스템 - reDuck",
     startDate: "2023/02",
-    endDate: "(진행중)",
+    endDate: "2024/05",
   },
   portfolio: {
     title: "임동윤 포트폴리오",
@@ -89,9 +121,9 @@ export const PROJECTINFO: { [key: string]: IProjectInfo } = Object.freeze({
     startDate: "2022/09",
     endDate: "2022/11",
   },
-  cnmusicfesta: {
-    title: "충남 전역에서 펼쳐지는 정열의 음악 축제! - 충남뮤직페스타",
-    startDate: "2021/09",
-    endDate: "2021/12",
+  officekeeper: {
+    title: "기업 보안 솔루션 - OfficeKeeper 관리자 웹사이트",
+    startDate: "2024/07",
+    endDate: "(진행중)",
   },
 });

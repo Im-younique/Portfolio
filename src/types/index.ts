@@ -22,3 +22,10 @@ export interface IProjectInfo {
   startDate: string;
   endDate: string;
 }
+
+export interface IWorkExperience {
+  company: string;
+  role: string;
+  period: string;
+  achievements: string[];
+}

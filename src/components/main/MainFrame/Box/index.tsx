@@ -1,8 +1,7 @@
 "use client";
 
-// recoil
-import { useRecoilState } from "recoil";
-import { mainState } from "@/lib/recoil/atoms/mainState";
+// context
+import { useMainExpand } from "@/lib/context/MainExpandContext";
 
 // styles
 import classes from "./box.module.scss";
@@ -16,18 +15,18 @@ interface IProps {
 }
 
 const Box = ({ boxName, children }: IProps) => {
-  const [expanded, setExpanded] = useRecoilState(mainState);
+  const { activeSection, setActiveSection } = useMainExpand();
 
   const handleBoxClick = (name: TMainExpand) => {
-    setExpanded(name);
+    setActiveSection(name);
   };
 
   return (
     <section
       className={`${
-        boxName === expanded
+        boxName === activeSection
           ? classes.expand
-          : expanded !== "none" && classes.shrink
+          : activeSection !== "none" && classes.shrink
       }`}
     >
       <div className={classes.box} onClick={() => handleBoxClick(boxName)}>
