@@ -1,7 +1,8 @@
+import Link from "next/link";
 import { PROJECTINFO } from "@/constants";
 
 // icon
-import { RiCalendar2Fill } from "@remixicon/react";
+import { RiCalendar2Fill, RiArrowLeftLine } from "@remixicon/react";
 
 export default async function ProjectLayout({
   params,
@@ -13,6 +14,10 @@ export default async function ProjectLayout({
   const { projectName } = await params;
   return (
     <div className="detail-wrapper">
+      <Link href="/" className="detail-back-btn" aria-label="메인으로 돌아가기">
+        <RiArrowLeftLine />
+        <span>메인으로</span>
+      </Link>
       <header className="detail-header">
         <div className="detail-header-txt-wrap">
           <h3>{PROJECTINFO[projectName].title}</h3>
