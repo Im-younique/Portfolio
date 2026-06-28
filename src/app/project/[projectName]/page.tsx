@@ -4,9 +4,9 @@ import ReduckDetail from "../(detail)/reduck";
 import PortfolioDetail from "../(detail)/portfolio";
 import CheerdoDetail from "../(detail)/cheerdo";
 import OneKmwineDetail from "../(detail)/1kmwine";
-import MoonDiaryDetail from "../(detail)/moondiary";
+import FirstDrinkDetail from "../(detail)/firstdrink";
 import BoothStampDetail from "../(detail)/boothstamp";
-import CultureDetail from "../(detail)/culture";
+import MoonDiaryDetail from "../(detail)/moondiary";
 
 export default async function ProjectPage({
   params,
@@ -28,11 +28,11 @@ export default async function ProjectPage({
       return <CheerdoDetail />;
     case "1kmwine":
       return <OneKmwineDetail />;
-    case "moondiary":
-      return <MoonDiaryDetail />;
+    case "firstdrink":
+      return <FirstDrinkDetail />;
     case "boothstamp":
       return <BoothStampDetail />;
-    case "culture":
-      return <CultureDetail />;
+    case "moondiary":
+      return <MoonDiaryDetail />;
   }
 }

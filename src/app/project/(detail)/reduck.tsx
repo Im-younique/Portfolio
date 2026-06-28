@@ -13,14 +13,22 @@ export default function ReduckDetail() {
         <h2>성과</h2>
         <ListBlockquote.Container>
           <ListBlockquote.Text>
+            프론트엔드 2명·백엔드 10명 규모의 팀에서 프론트엔드 리더로 참여 (전체
+            기여도 약 35%)
+          </ListBlockquote.Text>
+          <ListBlockquote.Text>
+            직접 개발한 Tiptap 이미지 리사이즈 확장을 npm 오픈소스로 배포 — 누적
+            다운로드 100,000회 돌파
+          </ListBlockquote.Text>
+          <ListBlockquote.Text>
             SSR을 활용하여 사용자 토큰 유지 및 사용자 인증 구현
           </ListBlockquote.Text>
           <ListBlockquote.Text>
-            SockJS, Stomp를 이용하여 웹 채팅 구현
+            SockJS, Stomp를 이용하여 실시간 웹 채팅 구현
           </ListBlockquote.Text>
           <ListBlockquote.Text>유저 팔로잉 기능 개발</ListBlockquote.Text>
           <ListBlockquote.Text>
-            Next버전 13에서 14로 이동시 page router에서 app router로 전환
+            Next 13 → 14 마이그레이션 시 Page Router에서 App Router로 전환 주도
           </ListBlockquote.Text>
         </ListBlockquote.Container>
       </div>
@@ -54,6 +62,26 @@ export default function ReduckDetail() {
           <Accordian title="Light House">
             Light House를 통해 웹 사이트의 성능을 측정하고 더 나은 사용자 경험을
             만들어 갔습니다.
+          </Accordian>
+        </Accordian.Group>
+      </div>
+      <div className="detail-content-section">
+        <h2>주요 기여</h2>
+        <Accordian.Group>
+          <Accordian title="Tiptap 이미지 리사이즈 오픈소스 배포">
+            에디터 기능을 개발하던 중 이미지 리사이즈가 필요했지만 적합한
+            라이브러리를 찾지 못해 Tiptap 확장을 직접 구현했습니다. 재사용성을
+            고려해 npm에 오픈소스로 공개했고, 현재 누적 다운로드 100,000회를
+            넘어서며 다른 개발자들에게도 활용되고 있습니다.
+          </Accordian>
+          <Accordian title="SSR 기반 인증 처리">
+            커뮤니티 특성상 SEO와 빠른 초기 렌더링이 중요했기에 SSR을
+            도입했고, 서버 사이드에서 사용자 토큰을 유지하며 인증 상태를
+            처리하도록 구현했습니다.
+          </Accordian>
+          <Accordian title="실시간 웹 채팅">
+            멘토링 시스템에 필요한 실시간 소통을 위해 SockJS와 STOMP를 활용해
+            웹 채팅을 구현했습니다.
           </Accordian>
         </Accordian.Group>
       </div>
