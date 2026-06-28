@@ -17,7 +17,7 @@ const SideSetting = () => {
           <h4>CHOOSE THEME</h4>
           <ThemeToggle />
           <h4>LAST UPDATED</h4>
-          <p>2026/03/18</p>
+          <p>2026/06/28</p>
           <RiCloseFill
             className={classes.close}
             onClick={() => setShow(false)}
