@@ -11,10 +11,13 @@ export type TResumeKind =
   | "license"
   | "etc";
 
+export type TProjectCategory = "work" | "personal";
+
 export interface IProjectList {
   name: string;
   href: string;
   src: string;
+  category: TProjectCategory;
 }
 
 export interface IProjectInfo {

@@ -13,8 +13,8 @@ export default function WeekipDetail() {
         <h2>성과</h2>
         <ListBlockquote.Container>
           <ListBlockquote.Text>
-            weekip.co (유저사이트), weekip.me/admin (관리자 사이트) 기획 부터
-            개발까지 총괄
+            weekip.co (유저사이트), weekip.me/admin (관리자 사이트)의 기획부터
+            프론트엔드 개발까지 단독 수행 (마케팅·콘텐츠는 별도 인력 담당)
           </ListBlockquote.Text>
           <ListBlockquote.Text>
             유저사이트에서 200명 트래픽 획득 (Google Analytics 기반)
@@ -71,6 +71,27 @@ export default function WeekipDetail() {
           <Accordian title="Light House">
             Light House를 통해 웹 사이트의 성능을 측정하고 더 나은 사용자 경험을
             만들어 갔습니다.
+          </Accordian>
+        </Accordian.Group>
+      </div>
+      <div className="detail-content-section">
+        <h2>주요 기여</h2>
+        <Accordian.Group>
+          <Accordian title="Lighthouse 성능 최적화 (50 → 92)">
+            LCP에 영향을 주는 핵심 이미지를 우선 렌더링하도록 세분화하고,
+            나머지 이미지에는 lazy-loading을 적용했습니다. 또한 스켈레톤 UI를
+            도입해 데이터 로딩 후 요소 위치가 밀리는 레이아웃 시프트(CLS)를
+            최소화하여 체감 성능과 점수를 함께 끌어올렸습니다.
+          </Accordian>
+          <Accordian title="Tiptap 이미지 리사이즈 오픈소스 배포">
+            관리자 사이트의 에디터 기능을 개발하며 Tiptap 이미지 리사이즈
+            확장을 직접 구현했고, npm에 오픈소스로 공개해 다른 프로젝트에서도
+            재사용할 수 있도록 했습니다.
+          </Accordian>
+          <Accordian title="Firebase 기반 백엔드 부재 해결">
+            전문 백엔드 개발자가 없는 상황에서 Firebase를 도입해 인증·보안·푸시
+            알림·예약 배포를 직접 구성했고, Firebase의 약한 텍스트 검색을 Elastic
+            Search로 보완해 콘텐츠 검색 품질을 확보했습니다.
           </Accordian>
         </Accordian.Group>
       </div>

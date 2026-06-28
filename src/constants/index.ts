@@ -1,50 +1,61 @@
 import { IProjectInfo, IProjectList, IWorkExperience } from "@/types";
 
 export const PROJECTLIST: IProjectList[] = [
+  // 실무 (회사)
   {
     name: "OfficeKeeper",
     href: "project/officekeeper",
     src: "/thumbnail/officekeeper.png",
+    category: "work",
   },
   {
     name: "위킵 Weekip",
     href: "project/weekip",
     src: "/thumbnail/weekip.png",
-  },
-  {
-    name: "reDuck",
-    href: "project/reduck",
-    src: "/thumbnail/reduck.png",
-  },
-  {
-    name: "포트폴리오",
-    href: "project/portfolio",
-    src: "/thumbnail/portfolio.png",
-  },
-  {
-    name: "CheerDo",
-    href: "project/cheerdo",
-    src: "/thumbnail/cheer-do.png",
+    category: "work",
   },
   {
     name: "1kmwine",
     href: "project/1kmwine",
     src: "/thumbnail/1kmwine.png",
+    category: "work",
+  },
+  // 개인 · 사이드
+  {
+    name: "첫잔 FirstDrink",
+    href: "project/firstdrink",
+    src: "/thumbnail/firstdrink.png",
+    category: "personal",
+  },
+  {
+    name: "reDuck",
+    href: "project/reduck",
+    src: "/thumbnail/reduck.png",
+    category: "personal",
+  },
+  {
+    name: "포트폴리오",
+    href: "project/portfolio",
+    src: "/thumbnail/portfolio.png",
+    category: "personal",
+  },
+  {
+    name: "CheerDo",
+    href: "project/cheerdo",
+    src: "/thumbnail/cheer-do.png",
+    category: "personal",
   },
   {
     name: "달이 들어주는 오늘",
     href: "project/moondiary",
     src: "/thumbnail/moon-diary.png",
+    category: "personal",
   },
   {
     name: "Boothstamp",
     href: "project/boothstamp",
     src: "/thumbnail/boothstamp.png",
-  },
-  {
-    name: "대흥동 문화의 집",
-    href: "project/culture",
-    src: "/thumbnail/culture.png",
+    category: "personal",
   },
 ];
 
@@ -106,20 +117,20 @@ export const PROJECTINFO: { [key: string]: IProjectInfo } = Object.freeze({
     startDate: "2022/08",
     endDate: "2022/08",
   },
-  moondiary: {
-    title: "어른이를 위한 일기장 - 달이 들어주는 오늘",
-    startDate: "2022/06",
-    endDate: "2022/07",
+  firstdrink: {
+    title: "칵테일 레시피 & 바텐딩 가이드 - 첫잔(FirstDrink)",
+    startDate: "2026/03",
+    endDate: "(진행중)",
   },
   boothstamp: {
     title: "AI/SW 페스티벌 부스 체험 - BoothStamp",
     startDate: "2022/07",
     endDate: "2022/08",
   },
-  culture: {
-    title: "청소년들의 건강한 문화놀이터 - 대흥동 청소년 문화의 집",
-    startDate: "2022/09",
-    endDate: "2022/11",
+  moondiary: {
+    title: "어른이를 위한 일기장 - 달이 들어주는 오늘",
+    startDate: "2022/06",
+    endDate: "2022/07",
   },
   officekeeper: {
     title: "기업 보안 솔루션 - OfficeKeeper 관리자 웹사이트",
