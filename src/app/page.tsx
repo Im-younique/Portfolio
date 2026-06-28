@@ -32,10 +32,19 @@ export default function Home() {
         <MainFrame.Box boxName="my project">
           <MainFrame.BoxTitle title="my project" />
           <MainFrame.BoxContent title="my project" icon_name="bag">
-            <ProjectList.Container>
-              {PROJECTLIST.map((val) => (
-                <ProjectList.Box key={val.name} {...val} />
-              ))}
+            <ProjectList.Container title="실무 프로젝트">
+              {PROJECTLIST.filter((val) => val.category === "work").map(
+                (val) => (
+                  <ProjectList.Box key={val.name} {...val} />
+                )
+              )}
+            </ProjectList.Container>
+            <ProjectList.Container title="개인 · 사이드 프로젝트">
+              {PROJECTLIST.filter((val) => val.category === "personal").map(
+                (val) => (
+                  <ProjectList.Box key={val.name} {...val} />
+                )
+              )}
             </ProjectList.Container>
           </MainFrame.BoxContent>
         </MainFrame.Box>
