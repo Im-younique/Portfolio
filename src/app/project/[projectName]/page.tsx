@@ -7,6 +7,9 @@ import OneKmwineDetail from "../(detail)/1kmwine";
 import FirstDrinkDetail from "../(detail)/firstdrink";
 import BoothStampDetail from "../(detail)/boothstamp";
 import MoonDiaryDetail from "../(detail)/moondiary";
+import RainmakerDetail from "../(detail)/rainmaker";
+import LaminaDetail from "../(detail)/lamina";
+import CultureDetail from "../(detail)/culture";
 
 export default async function ProjectPage({
   params,
@@ -34,5 +37,11 @@ export default async function ProjectPage({
       return <BoothStampDetail />;
     case "moondiary":
       return <MoonDiaryDetail />;
+    case "rainmaker":
+      return <RainmakerDetail />;
+    case "lamina":
+      return <LaminaDetail />;
+    case "culture":
+      return <CultureDetail />;
   }
 }
