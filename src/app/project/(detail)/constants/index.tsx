@@ -164,3 +164,26 @@ export const MUSICIMAGE = [
     alt: "뮤직페스타 팀 소개",
   },
 ];
+
+export const RAINMAKERIMAGE = [
+  {
+    src: "/projectImages/rainmaker/dashboard.png",
+    alt: "RAINMAKER 영업 대시보드",
+  },
+  {
+    src: "/projectImages/rainmaker/generator.png",
+    alt: "RAINMAKER AI 문서 생성기",
+  },
+  {
+    src: "/projectImages/rainmaker/editor.png",
+    alt: "RAINMAKER 웹 문서 에디터",
+  },
+  {
+    src: "/projectImages/rainmaker/library.png",
+    alt: "RAINMAKER 문서 보관함",
+  },
+  {
+    src: "/projectImages/rainmaker/templates.png",
+    alt: "RAINMAKER 메일 템플릿",
+  },
+];

@@ -20,7 +20,19 @@ export const PROJECTLIST: IProjectList[] = [
     src: "/thumbnail/1kmwine.png",
     category: "work",
   },
-  // 개인 · 사이드
+  // 개인 · 사이드 (최신순)
+  {
+    name: "RAINMAKER",
+    href: "project/rainmaker",
+    src: "/thumbnail/rainmaker.png",
+    category: "personal",
+  },
+  {
+    name: "Lamina",
+    href: "project/lamina",
+    src: "/thumbnail/lamina.png",
+    category: "personal",
+  },
   {
     name: "첫잔 FirstDrink",
     href: "project/firstdrink",
@@ -55,6 +67,12 @@ export const PROJECTLIST: IProjectList[] = [
     name: "Boothstamp",
     href: "project/boothstamp",
     src: "/thumbnail/boothstamp.png",
+    category: "personal",
+  },
+  {
+    name: "대흥동 문화의 집",
+    href: "project/culture",
+    src: "/thumbnail/culture.png",
     category: "personal",
   },
 ];
@@ -121,6 +139,21 @@ export const PROJECTINFO: { [key: string]: IProjectInfo } = Object.freeze({
     title: "칵테일 레시피 & 바텐딩 가이드 - 첫잔(FirstDrink)",
     startDate: "2026/03",
     endDate: "(진행중)",
+  },
+  lamina: {
+    title: "AI 기반 인터랙티브 기능명세 설계 SaaS - Lamina",
+    startDate: "2026/05",
+    endDate: "(진행중)",
+  },
+  rainmaker: {
+    title: "AI 영업 문서 자동화 SaaS - RAINMAKER",
+    startDate: "2026/07",
+    endDate: "(진행중)",
+  },
+  culture: {
+    title: "청소년들의 건강한 문화놀이터 - 대흥동 청소년 문화의 집",
+    startDate: "2022/09",
+    endDate: "2022/11",
   },
   boothstamp: {
     title: "AI/SW 페스티벌 부스 체험 - BoothStamp",
