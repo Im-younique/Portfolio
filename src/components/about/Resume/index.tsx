@@ -14,6 +14,9 @@ import { TResumeKind } from "@/types";
 // constants
 import { WORK_EXPERIENCES } from "@/constants";
 
+// utils
+import { onActivate } from "@/lib/a11y";
+
 // icon
 import {
   RiBriefcaseFill,
@@ -81,6 +84,9 @@ export default function Resume() {
               selected === "experience" && classes.box_active
             }`}
             onClick={() => handleSelect("experience")}
+            onKeyDown={onActivate(() => handleSelect("experience"))}
+            role="button"
+            tabIndex={0}
           >
             <RiBriefcaseFill />
             <span>experience</span>
@@ -90,6 +96,9 @@ export default function Resume() {
               selected === "education" && classes.box_active
             } `}
             onClick={() => handleSelect("education")}
+            onKeyDown={onActivate(() => handleSelect("education"))}
+            role="button"
+            tabIndex={0}
           >
             <RiGraduationCapFill />
             <span>education</span>
@@ -99,6 +108,9 @@ export default function Resume() {
               selected === "skills" && classes.box_active
             }`}
             onClick={() => handleSelect("skills")}
+            onKeyDown={onActivate(() => handleSelect("skills"))}
+            role="button"
+            tabIndex={0}
           >
             <RiStarFill />
             <span>skills</span>
@@ -108,6 +120,9 @@ export default function Resume() {
               selected === "license" && classes.box_active
             }`}
             onClick={() => handleSelect("license")}
+            onKeyDown={onActivate(() => handleSelect("license"))}
+            role="button"
+            tabIndex={0}
           >
             <RiIdCardFill />
             <span>license</span>
@@ -117,6 +132,9 @@ export default function Resume() {
               selected === "etc" && classes.box_active
             }`}
             onClick={() => handleSelect("etc")}
+            onKeyDown={onActivate(() => handleSelect("etc"))}
+            role="button"
+            tabIndex={0}
           >
             <RiAddBoxFill />
             <span>etc</span>
@@ -128,6 +146,9 @@ export default function Resume() {
               "experience"
             )}`}
             onClick={() => handleSelect("experience")}
+            onKeyDown={onActivate(() => handleSelect("experience"))}
+            role="button"
+            tabIndex={0}
           >
             <div className={classes.resume_card_title}>
               <RiBriefcaseFill />
@@ -162,6 +183,9 @@ export default function Resume() {
               "education"
             )}`}
             onClick={() => handleSelect("education")}
+            onKeyDown={onActivate(() => handleSelect("education"))}
+            role="button"
+            tabIndex={0}
           >
             <div className={classes.resume_card_title}>
               <RiGraduationCapFill />
@@ -203,6 +227,9 @@ export default function Resume() {
               "skills"
             )}`}
             onClick={() => handleSelect("skills")}
+            onKeyDown={onActivate(() => handleSelect("skills"))}
+            role="button"
+            tabIndex={0}
           >
             <div className={classes.resume_card_title}>
               <RiStarFill />
@@ -250,6 +277,9 @@ export default function Resume() {
               "license"
             )}`}
             onClick={() => handleSelect("license")}
+            onKeyDown={onActivate(() => handleSelect("license"))}
+            role="button"
+            tabIndex={0}
           >
             <div className={classes.resume_card_title}>
               <RiIdCardFill />
@@ -292,6 +322,9 @@ export default function Resume() {
               "etc"
             )}`}
             onClick={() => handleSelect("etc")}
+            onKeyDown={onActivate(() => handleSelect("etc"))}
+            role="button"
+            tabIndex={0}
           >
             <div className={classes.resume_card_title}>
               <RiAddBoxFill />

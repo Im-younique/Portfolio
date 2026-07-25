@@ -4,6 +4,8 @@ import { ReactNode, useState } from "react";
 
 import Group from "./Group";
 
+import { onActivate } from "@/lib/a11y";
+
 import clasees from "./accordian.module.scss";
 
 import { RiArrowDownSLine, RiArrowUpSLine } from "@remixicon/react";
@@ -20,6 +22,10 @@ const Accordian = ({ title, children }: IProp) => {
       <section
         className={clasees.titleBox}
         onClick={() => setOpen((prev) => !prev)}
+        onKeyDown={onActivate(() => setOpen((prev) => !prev))}
+        role="button"
+        tabIndex={0}
+        aria-expanded={open}
       >
         <h3>{title}</h3>
         {open ? <RiArrowUpSLine /> : <RiArrowDownSLine />}
