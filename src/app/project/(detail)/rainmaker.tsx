@@ -1,7 +1,10 @@
 "use client";
 
 // components
-import { LinkText, Accordian, ListBlockquote } from "./components";
+import { ImageSlider, LinkText, Accordian, ListBlockquote } from "./components";
+
+// constants
+import { RAINMAKERIMAGE } from "./constants";
 
 export default function RainmakerDetail() {
   return (
@@ -81,7 +84,15 @@ export default function RainmakerDetail() {
         </Accordian.Group>
       </div>
       <div className="detail-content-section">
+        <h2>Demo사진</h2>
+        <ImageSlider images={RAINMAKERIMAGE} />
+      </div>
+      <div className="detail-content-section">
         <h2>관련링크</h2>
+        <LinkText
+          href="https://deal-closer.namo.site/"
+          text="RAINMAKER 소개 페이지 바로가기"
+        />
         <LinkText
           href="https://github.com/JR-STUDY/Deal-Closer"
           text="Github Repository"
