@@ -6,6 +6,8 @@ import { ThemeToggle } from "..";
 
 import classes from "./sidesetting.module.scss";
 
+import { onActivate } from "@/lib/a11y";
+
 import { RiSettings3Fill, RiCloseFill } from "@remixicon/react";
 
 const SideSetting = () => {
@@ -27,6 +29,10 @@ const SideSetting = () => {
         <div
           className={`${classes.fixed} ${classes.tab}`}
           onClick={() => setShow(true)}
+          onKeyDown={onActivate(() => setShow(true))}
+          role="button"
+          tabIndex={0}
+          aria-label="설정 열기"
         >
           <RiSettings3Fill />
         </div>

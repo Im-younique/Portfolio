@@ -127,6 +127,15 @@ export default function ImageSlider({ images, isMobile = false }: IProp) {
               isMobile && classes.mobImageSelector
             }`}
             onClick={() => moveSlide(idx)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                moveSlide(idx);
+              }
+            }}
+            role="button"
+            tabIndex={0}
+            aria-label={`${idx + 1}번 이미지 보기`}
           >
             <Image
               src={src}
