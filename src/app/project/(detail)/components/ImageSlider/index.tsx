@@ -60,9 +60,11 @@ export default function ImageSlider({ images, isMobile = false }: IProp) {
   };
 
   useEffect(() => {
+    let timer: ReturnType<typeof setTimeout> | undefined;
+
     if (imgIndex === 0) {
       setImgIndex(images.length);
-      setTimeout(() => {
+      timer = setTimeout(() => {
         if (imgContainerRef.current != null) {
           imgContainerRef.current.style.transform = `translateX(-${images.length}00%)`;
           imgContainerRef.current.style.transition = "0s";
@@ -72,13 +74,17 @@ export default function ImageSlider({ images, isMobile = false }: IProp) {
 
     if (imgIndex > images.length) {
       setImgIndex(1);
-      setTimeout(() => {
+      timer = setTimeout(() => {
         if (imgContainerRef.current != null) {
           imgContainerRef.current.style.transform = `translateX(-100%)`;
           imgContainerRef.current.style.transition = "0s";
         }
       }, 500);
     }
+
+    return () => {
+      if (timer) clearTimeout(timer);
+    };
   }, [imgIndex, images]);
 
   return (
